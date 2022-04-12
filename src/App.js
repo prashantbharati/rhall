@@ -1,9 +1,11 @@
 import React from "react";
-
+import { Typography } from "@material-ui/core";
 const App = () => {
   return (
     <>
-      <div>lol</div>
+      <div>
+        <Typography>lol</Typography>
+      </div>
     </>
   );
 };
