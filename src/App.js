@@ -11,6 +11,7 @@ const App = () => {
           backgroundImage: `url('${aa}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          imageRendering: "-webkit-optimize-contrast",
         }}
       >
         <Nav />
