@@ -1,9 +1,11 @@
 import React from "react";
-
+import { Typography } from "@material-ui/core";
 const Nav = () => {
   return (
     <>
-      <div style={{ width: "200px", height: "400px" }}>Navabr</div>
+      <div style={{ height: "100px", backgroundColor: "#99FFCD" }}>
+        <Typography>Navbar</Typography>
+      </div>
     </>
   );
 };
