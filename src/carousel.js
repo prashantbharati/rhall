@@ -5,7 +5,7 @@ import filter1000 from "./images/filter1000.png";
 import filter2000 from "./images/filter2000.png";
 import simplex from "./images/filtersimplex.png";
 
-const cacomponent = () => {
+const Cacomponent = () => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     // { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
@@ -45,5 +45,24 @@ const cacomponent = () => {
         </div>
       ))}
     </Carousel>
+
+    /* <Carousel>
+      <Carousel.Item>
+        <img src="filter1000" alt="First slide" />
+        <Carousel.Caption>RAINMAX 1000</Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img src="filter2000" alt="First slide" />
+        <Carousel.Caption>RAINMAX 2000</Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img src="simplex" alt="First slide" />
+        <Carousel.Caption>RAINMAX SIMPLEX</Carousel.Caption>
+      </Carousel.Item>
+    </Carousel> */
   );
 };
+
+export default Cacomponent;

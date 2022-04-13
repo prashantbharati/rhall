@@ -2,7 +2,8 @@ import React from "react";
 import { Typography, Grid } from "@material-ui/core";
 import Nav from "./Nav";
 import aa from "./images/admin-ajax.jpg";
-import filter1 from "./images/filter1.png";
+
+import Cacomponent from "./carousel";
 const App = () => {
   return (
     <>
@@ -68,7 +69,7 @@ const App = () => {
             </Grid>
 
             <Grid item md={5}>
-              <img src={filter1} alt="BigCo Inc. logo" />
+              <Cacomponent />
             </Grid>
           </Grid>
         </div>
