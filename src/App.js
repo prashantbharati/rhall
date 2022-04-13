@@ -9,11 +9,15 @@ const App = () => {
     <>
       <div
         style={{
-          height: "130vh",
+          // height: "130vh",
           backgroundImage: `url('${aa}')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          imageRendering: "-webkit-optimize-contrast",
+          width: "100%",
+          height: "130vh",
+          objectFit: "contain",
+          objectPosition: "50% 50%",
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          // imageRendering: "-webkit-optimize-contrast",
         }}
       >
         <Nav />
@@ -68,7 +72,7 @@ const App = () => {
               </div>
             </Grid>
 
-            <Grid item md={5}>
+            <Grid item md={4}>
               <Cacomponent />
             </Grid>
           </Grid>

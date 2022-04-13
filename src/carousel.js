@@ -10,7 +10,7 @@ const Cacomponent = () => {
     { width: 1, itemsToShow: 1 },
     // { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
     // { width: 850, itemsToShow: 3 },
-    { width: 1000, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 500, itemsToShow: 2, itemsToScroll: 2 },
     // { width: 1450, itemsToShow: 5 },
     // { width: 1750, itemsToShow: 6 },
   ];
@@ -36,12 +36,13 @@ const Cacomponent = () => {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
           <img src={card.imagelink} alt="imagefilter" />
-          <Typography>{card.name}</Typography>
+          <Typography style={{ color: "white" }}>{card.name}</Typography>
         </div>
       ))}
     </Carousel>
