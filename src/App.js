@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Button, Grid } from "@material-ui/core";
 import Nav from "./Nav";
-
+import frontfilter1 from "./images/frontfilter1.jpg";
 import frontfirst from "./images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 const App = () => {
@@ -154,6 +154,59 @@ const App = () => {
             flooding.
           </Typography>
         </div>
+      </div>
+
+      <div style={{ marginLeft: "40px" }}>
+        <Grid container>
+          {/* <Grid item sm={0} md={1}></Grid> */}
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginRight: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                Rainmax Filter
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "200",
+                }}
+              >
+                Rainmax’s filter is the most effective, affordable and
+                easy-to-use solution for Rooftop Rainwater Harvesting.It carries
+                out a two-stage filtration process through its fine 100 micron
+                Stainless Steel (SS) 304 grade mesh and its unique first flush
+                system, thus effectively removing dust, leaves, contaminants and
+                other debris. Depending on your roof area and requirements,
+                there are 4 variants of this filter.
+              </Typography>
+            </div>
+          </Grid>
+
+          <Grid
+            style={{
+              backgroundImage: `url('${frontfilter1}')`,
+              backgroundSize: "cover",
+            }}
+            item
+            sm={12}
+            md={6}
+          ></Grid>
+        </Grid>
       </div>
     </>
   );
