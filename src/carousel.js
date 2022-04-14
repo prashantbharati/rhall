@@ -31,38 +31,36 @@ const Cacomponent = () => {
   ];
 
   return (
-    <Carousel breakPoints={breakPoints}>
-      {cards.map((card) => (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <img src={card.imagelink} alt="imagefilter" />
-          <Typography style={{ color: "white" }}>{card.name}</Typography>
-        </div>
-      ))}
-    </Carousel>
-
-    /* <Carousel>
-      <Carousel.Item>
-        <img src="filter1000" alt="First slide" />
-        <Carousel.Caption>RAINMAX 1000</Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img src="filter2000" alt="First slide" />
-        <Carousel.Caption>RAINMAX 2000</Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img src="simplex" alt="First slide" />
-        <Carousel.Caption>RAINMAX SIMPLEX</Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> */
+    <div
+      style={{
+        // height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Carousel breakPoints={breakPoints}>
+        {cards.map((card) => (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "500px",
+            }}
+          >
+            <img
+              style={{ height: "90%" }}
+              src={card.imagelink}
+              alt="imagefilter"
+            />
+            <Typography style={{ color: "white" }}>{card.name}</Typography>
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

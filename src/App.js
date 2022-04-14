@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Grid } from "@material-ui/core";
 import Nav from "./Nav";
 import aa from "./images/admin-ajax.jpg";
-
+import frontfirst from "./images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 const App = () => {
   return (
@@ -10,14 +10,13 @@ const App = () => {
       <div
         style={{
           // height: "130vh",
-          backgroundImage: `url('${aa}')`,
+          backgroundImage: `url('${frontfirst}')`,
           width: "100%",
           height: "130vh",
-          objectFit: "contain",
-          objectPosition: "50% 50%",
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          // imageRendering: "-webkit-optimize-contrast",
+
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          imageRendering: "-webkit-optimize-contrast",
         }}
       >
         <Nav />
@@ -29,14 +28,16 @@ const App = () => {
           }}
         >
           <Grid container>
-            <Grid item md={7}>
+            <Grid item md={1}></Grid>
+
+            <Grid item md={6}>
               <div
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
                   // textAlign: "center",
-                  alignItems: "center",
+                  // alignItems: "center",
                   height: "100%",
                 }}
               >
@@ -45,7 +46,7 @@ const App = () => {
                     color: "white",
 
                     fontSize: "170px",
-                    fontWeight: "lighter",
+                    fontWeight: "400",
                   }}
                 >
                   Be
@@ -72,8 +73,16 @@ const App = () => {
               </div>
             </Grid>
 
-            <Grid item md={4}>
-              <Cacomponent />
+            <Grid item md={1}></Grid>
+
+            <Grid item md={3}>
+              <div
+                style={{
+                  maxHeight: "0px",
+                }}
+              >
+                <Cacomponent />
+              </div>
             </Grid>
           </Grid>
         </div>
