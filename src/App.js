@@ -75,13 +75,28 @@ const App = () => {
 
             <Grid item md={1}></Grid>
 
-            <Grid item md={3}>
-              <div
-                style={{
-                  maxHeight: "0px",
-                }}
-              >
-                <Cacomponent />
+            <Grid item sm={12} md={3}>
+              <Cacomponent />
+
+              <div>
+                <Typography style={{ color: "blue" }}>
+                  Why Rainmax filters are best in class:
+                </Typography>
+
+                <ul style={{ color: "white" }}>
+                  <li>
+                    <Typography>Two-stage filtration</Typography>
+                  </li>
+                  <li>
+                    <Typography>Self-cleaning</Typography>
+                  </li>
+                  <li>
+                    <Typography>100 micron SS 304 mesh</Typography>
+                  </li>
+                  <li>
+                    <Typography>First flush system</Typography>
+                  </li>
+                </ul>
               </div>
             </Grid>
           </Grid>

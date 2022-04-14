@@ -65,3 +65,28 @@ const Cacomponent = () => {
 };
 
 export default Cacomponent;
+
+/*
+
+<div>
+                  <Typography style={{ color: "blue" }}>
+                    Why Rainmax filters are best in class:
+                  </Typography>
+
+                  <ul style={{ color: "white" }}>
+                    <li>
+                      <Typography>Two-stage filtration</Typography>
+                    </li>
+                    <li>
+                      <Typography>Self-cleaning</Typography>
+                    </li>
+                    <li>
+                      <Typography>100 micron SS 304 mesh</Typography>
+                    </li>
+                    <li>
+                      <Typography>First flush system</Typography>
+                    </li>
+                  </ul>
+                </div>
+
+*/
