@@ -210,46 +210,9 @@ const App = () => {
         </Grid>
       </div>
 
-      <div style={{ marginLeft: "40px" }}>
+      <div style={{ marginRight: "40px" }}>
         <Grid container>
           {/* <Grid item sm={0} md={1}></Grid> */}
-          <Grid item sm={12} md={6}>
-            <div
-              style={{
-                height: "130vh",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                marginRight: "20px",
-                // alignItems: "center",
-              }}
-            >
-              <Typography
-                style={{
-                  fontSize: "40px",
-                  fontWeight: "200",
-                  lineHeight: "2.5",
-                }}
-              >
-                Rainmax Filter
-              </Typography>
-
-              <Typography
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "200",
-                }}
-              >
-                Rainmax’s filter is the most effective, affordable and
-                easy-to-use solution for Rooftop Rainwater Harvesting.It carries
-                out a two-stage filtration process through its fine 100 micron
-                Stainless Steel (SS) 304 grade mesh and its unique first flush
-                system, thus effectively removing dust, leaves, contaminants and
-                other debris. Depending on your roof area and requirements,
-                there are 4 variants of this filter.
-              </Typography>
-            </div>
-          </Grid>
 
           <Grid
             style={{
@@ -260,6 +223,42 @@ const App = () => {
             sm={12}
             md={6}
           ></Grid>
+
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginLeft: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                Injection well
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "200",
+                }}
+              >
+                If you are trying to solve water problems for a residential
+                township, gated community or large apartment building, the
+                Rainmax Injection Well System is the most beneficial and
+                cost-effective solution for you. It ensures constant supply of
+                groundwater without having to depend on water tankers.
+              </Typography>
+            </div>
+          </Grid>
         </Grid>
       </div>
     </>
