@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
       <header className={classes.header}>
-        <a href="#" className={classes.headerlogo}>
+        <a href="#" id="logotop" className={classes.headerlogo}>
           Logo
         </a>
 
@@ -45,11 +45,14 @@ const Nav = () => {
       </header>
 
       <section class="banner"></section>
-      {/* 
+
       {window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
-        header.classList.toggle("headersticky", window.scrollY > 0);
-      })} */}
+        header.classList.toggle(classes.headersticky, window.scrollY > 0);
+
+        var links = document.querySelector("a");
+        links.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+      })}
     </>
   );
 };

@@ -66,7 +66,23 @@ export default makeStyles((theme) => ({
     backgroundSize: "cover",
   },
 
-  // header.sticky.logo,header.sticky ul li a{
-  //     color:#000,
-  // }
+  headerstickylogo: {
+    position: "relative",
+    fontWeight: "700",
+    // color: "#fff",
+    textDecoration: "none",
+    fontSize: "2em",
+    fontFamily: "Montserrat",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
+    color: "#000",
+  },
+
+  headerstickyullia: {
+    color: "#000",
+  },
+
+  //   headerstickylogo,header.sticky ul li a{
+  //       color:#000,
+  //   }
 }));
