@@ -3,7 +3,7 @@ import { Typography } from "@material-ui/core";
 const Nav = () => {
   return (
     <>
-      <div style={{ height: "20vh", backgroundColor: "#99FFCD" }}>
+      <div style={{ height: "20vh" }}>
         <Typography>Navbar</Typography>
       </div>
     </>
