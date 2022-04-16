@@ -11,7 +11,7 @@ const App = () => {
       <div
         style={{
           // height: "130vh",
-          backgroundImage: `url('${frontfirst}')`,
+          backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url('${frontfirst}')`,
           width: "100%",
           height: "150vh",
 
@@ -20,7 +20,10 @@ const App = () => {
           imageRendering: "-webkit-optimize-contrast",
         }}
       >
-        <Nav />
+        <div style={{ height: "30vh" }}>
+          <Nav />
+        </div>
+
         <div
           style={{
             display: "flex",
@@ -29,7 +32,7 @@ const App = () => {
           }}
         >
           <Grid container>
-            <Grid item md={1}></Grid>
+            <Grid item sm={0} md={1}></Grid>
 
             <Grid item sm={12} md={6}>
               <div

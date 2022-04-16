@@ -81,8 +81,4 @@ export default makeStyles((theme) => ({
   headerstickyullia: {
     color: "#000",
   },
-
-  //   headerstickylogo,header.sticky ul li a{
-  //       color:#000,
-  //   }
 }));
