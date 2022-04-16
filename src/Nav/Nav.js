@@ -12,33 +12,33 @@ const Nav = () => {
 
         <ul className={classes.headerul}>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
+            <a id="home" className={classes.headerullia} href="#">
               Home
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
-              About
+            <a id="filter" className={classes.headerullia} href="#">
+              Filter
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
-              Services
+            <a id="iwell" className={classes.headerullia} href="#">
+              Injection Well
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
-              Portfolio
+            <a id="blog" className={classes.headerullia} href="#">
+              Blog
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
-              Team
+            <a id="aboutus" className={classes.headerullia} href="#">
+              About Us
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a className={classes.headerullia} href="#">
-              Contact
+            <a id="urbanecology" className={classes.headerullia} href="#">
+              Urban Ecology
             </a>
           </li>
         </ul>
@@ -50,10 +50,33 @@ const Nav = () => {
         var header = document.querySelector("header");
         header.classList.toggle(classes.headersticky, window.scrollY > 0);
 
-        var links = document.querySelector("a");
-        links.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var logo = document.getElementById("logotop");
+        logo.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var home = document.getElementById("home");
+        home.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var filter = document.getElementById("filter");
+        filter.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var iwell = document.getElementById("iwell");
+        iwell.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var blog = document.getElementById("blog");
+        blog.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var aboutus = document.getElementById("aboutus");
+        aboutus.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+
+        var urbanecology = document.getElementById("urbanecology");
+        urbanecology.classList.toggle(
+          classes.headerstickylogo,
+          window.scrollY > 0
+        );
       })}
     </>
+
+    // home
   );
 };
 
