@@ -11,16 +11,15 @@ const App = () => {
       <div
         style={{
           // height: "130vh",
-          backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url('${frontfirst}')`,
+          backgroundImage: `linear-gradient(to-bottom,rgba(0,0,0,.5), rgba(0,0,0,.5)),url('${frontfirst}')`,
           width: "100%",
-          height: "150vh",
+          height: "200vh",
 
           backgroundSize: "cover",
           backgroundPosition: "center",
-          imageRendering: "-webkit-optimize-contrast",
         }}
       >
-        <div style={{ height: "30vh" }}>
+        <div style={{ height: "20%" }}>
           <Nav />
         </div>
 
@@ -88,7 +87,10 @@ const App = () => {
 
             <Grid item sm={12} md={3}>
               <div>
-                <Cacomponent />
+                <div style={{ height: "50%", boxShadow: "0px 0px 5px #fff" }}>
+                  <Cacomponent />
+                </div>
+
                 <br />
                 <div
                   style={{
