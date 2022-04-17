@@ -10,11 +10,9 @@ const App = () => {
     <>
       <div
         style={{
-          // height: "130vh",
-          backgroundImage: `linear-gradient(to-bottom,rgba(0,0,0,.5), rgba(0,0,0,.5)),url('${frontfirst}')`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('${frontfirst}')`,
           width: "100%",
           height: "200vh",
-
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -98,6 +96,7 @@ const App = () => {
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
+                    boxShadow: "0px 0px 5px #fff",
                   }}
                 >
                   <Typography style={{ color: "#B9F8D3" }}>
