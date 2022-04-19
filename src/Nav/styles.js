@@ -64,14 +64,15 @@ export default makeStyles((theme) => ({
 
   headerstickylogo: {
     position: "relative",
-    fontWeight: "700",
+
     // color: "#fff",
     textDecoration: "none",
-    fontSize: "2em",
+    fontSize: "17px",
+    fontWeight: "500",
     fontFamily: "Montserrat",
     textTransform: "uppercase",
     letterSpacing: "2px",
-    color: "#000",
+    color: "#fff",
   },
 
   headerstickyullia: {

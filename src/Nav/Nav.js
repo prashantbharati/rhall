@@ -12,44 +12,43 @@ const Nav = () => {
             style={{
               opacity: "1",
               padding: "5px",
-              height: "70px",
+              height: "60px",
               width: "1024",
             }}
             src={rainmaxlogo1}
             alt="logo"
           />
-          {/* logo */}
         </a>
 
         <ul className={classes.headerul}>
           <li className={classes.headerulli}>
             <a id="home" className={classes.headerullia} href="#">
-              <Typography>Home </Typography>
+              HOME
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="filter" className={classes.headerullia} href="#">
-              <Typography>Filter</Typography>
+              FILTER
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="iwell" className={classes.headerullia} href="#">
-              <Typography>Injection Well</Typography>
+              INJECTION WELL
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="blog" className={classes.headerullia} href="#">
-              <Typography>Blog</Typography>
+              BLOG
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="aboutus" className={classes.headerullia} href="#">
-              <Typography>About Us</Typography>
+              ABOUT US
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="urbanecology" className={classes.headerullia} href="#">
-              <Typography>Urban Ecology</Typography>
+              URBAN ECOLOGY
             </a>
           </li>
         </ul>
