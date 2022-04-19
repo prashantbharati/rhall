@@ -18,10 +18,10 @@ const App = () => {
           backgroundColor: "transparent",
           // background-image: ;
           opacity: "1",
-          transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
+          // transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
-        <div style={{ height: "20%" }}>
+        <div style={{ height: "15%" }}>
           <Nav />
         </div>
 
@@ -144,6 +144,8 @@ const App = () => {
           </Grid>
         </div>
       </div>
+
+      <div></div>
 
       <div
         style={{

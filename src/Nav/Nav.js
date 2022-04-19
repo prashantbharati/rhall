@@ -1,44 +1,55 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import useStyles from "./styles.js";
+import rainmaxlogo1 from "../images/rainmaxlogo1.png";
 const Nav = () => {
   const classes = useStyles();
   return (
     <>
       <header className={classes.header}>
         <a href="#" id="logotop" className={classes.headerlogo}>
-          Logo
+          <img
+            style={{
+              opacity: "1",
+              padding: "5px",
+              height: "70px",
+              width: "1024",
+            }}
+            src={rainmaxlogo1}
+            alt="logo"
+          />
+          {/* logo */}
         </a>
 
         <ul className={classes.headerul}>
           <li className={classes.headerulli}>
             <a id="home" className={classes.headerullia} href="#">
-              Home
+              <Typography>Home </Typography>
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="filter" className={classes.headerullia} href="#">
-              Filter
+              <Typography>Filter</Typography>
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="iwell" className={classes.headerullia} href="#">
-              Injection Well
+              <Typography>Injection Well</Typography>
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="blog" className={classes.headerullia} href="#">
-              Blog
+              <Typography>Blog</Typography>
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="aboutus" className={classes.headerullia} href="#">
-              About Us
+              <Typography>About Us</Typography>
             </a>
           </li>
           <li className={classes.headerulli}>
             <a id="urbanecology" className={classes.headerullia} href="#">
-              Urban Ecology
+              <Typography>Urban Ecology</Typography>
             </a>
           </li>
         </ul>

@@ -1,11 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-  body: {
-    background: "#000",
-    minHeight: "200vh",
-  },
-
   header: {
     position: "fixed",
     top: "0",
