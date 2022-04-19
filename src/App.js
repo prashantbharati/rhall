@@ -103,11 +103,28 @@ const App = () => {
                     boxShadow: "0px 0px 5px #fff",
                   }}
                 >
-                  <Typography style={{ color: "#B9F8D3" }}>
+                  <Typography
+                    style={{
+                      color: "#339a97",
+                      fontFamily: "Montserrat",
+                      fontSize: "18px",
+                      fontWeight: "200",
+                      lineHeight: "1.3em",
+                      padding: "15px",
+                      paddingBottom: "0",
+                    }}
+                  >
                     Why Rainmax filters are best in class:
                   </Typography>
 
-                  <ul style={{ color: "white" }}>
+                  <ul
+                    style={{
+                      color: "white",
+                      fontSize: "18px",
+                      fontWeight: "200",
+                      lineHeight: "1.3em",
+                    }}
+                  >
                     <li>
                       <Typography>Two-stage filtration</Typography>
                     </li>
