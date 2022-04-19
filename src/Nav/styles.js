@@ -21,7 +21,8 @@ export default makeStyles((theme) => ({
 
   headersticky: {
     padding: "5px 100px",
-    background: "#fff",
+    background: "rgba(0, 0, 0, 0.45);",
+    backdropFilter: "saturate(180%) blur(20px)",
   },
   headerlogo: {
     position: "relative",
