@@ -14,6 +14,18 @@ export default makeStyles((theme) => ({
     zIndex: "10000",
   },
 
+  button: {
+    // display: "table-cell",
+    backgroundColor: "#68CBC1",
+    color: "white",
+    textTransform: "uppercase",
+    letterSpacing: "0.2px",
+
+    borderStyle: "none",
+    borderRadius: "999px 999px 999px 999px",
+    boxShadow: "0px 5px 15px 0px rgb(39 48 112 / 51%)",
+  },
+
   headersticky: {
     padding: "5px 100px",
     background: "rgba(0, 0, 0, 0.45);",

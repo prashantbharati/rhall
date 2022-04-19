@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 import useStyles from "./styles.js";
 import rainmaxlogo1 from "../images/rainmaxlogo1.png";
 const Nav = () => {
@@ -52,6 +53,10 @@ const Nav = () => {
             </a>
           </li>
         </ul>
+
+        <Button className={classes.button} variant="contained">
+          contact us
+        </Button>
       </header>
 
       <section class="banner"></section>
