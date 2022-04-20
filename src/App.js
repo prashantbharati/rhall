@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Typography, Button, Grid } from "@material-ui/core";
 import Nav from "./Nav/Nav.js";
 import frontfilter1 from "./images/frontfilter1.jpg";
@@ -8,7 +8,11 @@ import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
 const App = () => {
   const classes = useStyles();
+  const [eopacity, seteopacity] = useState(0.36);
+  console.log(eopacity);
+
   return (
+    // '${eopacity}'
     <>
       <div
         id="topdiv"
@@ -156,6 +160,18 @@ const App = () => {
         >
           {/* <h1>lol what</h1> */}
         </div>
+
+        {
+          (window.onscroll = () => {
+            let newval = eopacity + 0.1;
+            let newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+
+            let value = Math.min(newScrollHeight / 100, 1);
+            newval = Math.min(newval, 1);
+            seteopacity(newval);
+          })
+        }
+
         <div style={{ backgroundColor: "white" }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -177,6 +193,8 @@ const App = () => {
           textAlign: "center",
         }}
       >
+        {}
+
         <Typography
           style={{
             fontSize: "40px",
