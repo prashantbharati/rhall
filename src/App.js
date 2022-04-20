@@ -11,6 +11,7 @@ const App = () => {
       <div
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.36) 0%, #0c0c0c 100%),url('${frontfirst}')`,
+          backgroundAttachment: "fixed",
           width: "100%",
           height: "200vh",
           backgroundSize: "cover",
@@ -143,19 +144,25 @@ const App = () => {
             </Grid>
           </Grid>
         </div>
-      </div>
 
-      <div style={{ backgroundColor: "black", height: "30vh", color: "white" }}>
-        <h1>lol what</h1>
-      </div>
-      <div style={{ backgroundColor: "white" }}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#000"
-            fill-opacity="3"
-            d="M0,64L240,192L480,192L720,256L960,64L1200,128L1440,192L1440,0L1200,0L960,0L720,0L480,0L240,0L0,0Z"
-          ></path>
-        </svg>
+        <div
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 0%, #111111)`,
+            height: "15vh",
+            color: "white",
+          }}
+        >
+          {/* <h1>lol what</h1> */}
+        </div>
+        <div style={{ backgroundColor: "white" }}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#0c0c0c"
+              fill-opacity="3"
+              d="M0,64L240,192L480,192L720,256L960,64L1200,128L1440,192L1440,0L1200,0L960,0L720,0L480,0L240,0L0,0Z"
+            ></path>
+          </svg>
+        </div>
       </div>
 
       <div
