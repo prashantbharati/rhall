@@ -5,7 +5,9 @@ import frontfilter1 from "./images/frontfilter1.jpg";
 import frontfilter2 from "./images/frontfilter2.jpg";
 import frontfirst from "./images/frontfirst.jpg";
 import Cacomponent from "./carousel";
+import useStyles from "./styles.js";
 const App = () => {
+  const classes = useStyles();
   return (
     <>
       <div
@@ -18,10 +20,20 @@ const App = () => {
           backgroundPosition: "center",
           backgroundColor: "transparent",
 
-          opacity: "1",
           transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
+        {window.addEventListener("scroll", function () {
+          var scrollTop = this.scrollTop();
+
+          ".header-overlay".css({
+            opacity: function () {
+              var elementHeight = this.height();
+              return 1 - (elementHeight - scrollTop) / elementHeight;
+            },
+          });
+        })}
+
         <div style={{ height: "15%" }}>
           <Nav />
         </div>
