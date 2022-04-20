@@ -16,9 +16,9 @@ const App = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: "transparent",
-          // background-image: ;
+
           opacity: "1",
-          // transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
+          transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
         <div style={{ height: "15%" }}>
@@ -145,7 +145,18 @@ const App = () => {
         </div>
       </div>
 
-      <div></div>
+      <div style={{ backgroundColor: "black", height: "30vh", color: "white" }}>
+        <h1>lol what</h1>
+      </div>
+      <div style={{ backgroundColor: "white" }}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000"
+            fill-opacity="3"
+            d="M0,64L240,192L480,192L720,256L960,64L1200,128L1440,192L1440,0L1200,0L960,0L720,0L480,0L240,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
 
       <div
         style={{
