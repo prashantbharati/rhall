@@ -28,7 +28,7 @@ const Nav = () => {
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="filter" className={classes.headerullia} href="#">
+            <a id="filter" className={classes.headerullia} href="/filter">
               FILTER
             </a>
           </li>
