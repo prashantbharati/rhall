@@ -7,7 +7,7 @@ const Nav = () => {
   const classes = useStyles();
   return (
     <>
-      <header className={classes.header}>
+      <header style={{ height: "15vh" }} className={classes.header}>
         <a href="#" id="logotop" className={classes.headerlogo}>
           <img
             style={{

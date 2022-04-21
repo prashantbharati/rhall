@@ -6,7 +6,7 @@ import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
-const App = () => {
+const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
   console.log(eopacity);
@@ -28,9 +28,9 @@ const App = () => {
           transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
-        <div style={{ height: "15%" }}>
+        {/* <div style={{ height: "15%" }}>
           <Nav />
-        </div>
+        </div> */}
 
         <div
           style={{
@@ -330,46 +330,4 @@ const App = () => {
   );
 };
 
-export default App;
-
-/*
-
-{/* {window.addEventListener("scroll", function () {
-          var topfirst = document.getElementById("topdiv");
-          {/* let val = topfirst.style.backgroundImage; */
-/* console.log(val); */
-/* let cv = 0.36;
-          topfirst.style.toggle(
-            
-              backgroundImage: `linear-gradient(180deg, rgba(0,0,0,'${
-                cv + 1
-              }') 0%, #0c0c0c 100%),url('${frontfirst}')`,
-              backgroundAttachment: "fixed",
-              width: "100%",
-              height: "200vh",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundColor: "transparent",
-
-              transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
-            ,
-            window.scrollY > 0
-          );
-        })}
-
-        {
-          (window.onwheel = (e) => {
-            if (e.deltaY >= 0) {
-              // Scrolling Down with mouse
-
-              topfirst.style.backgroundImage:`linear-gradient(180deg, rgba(0,0,0,'${
-                cv + 1
-              }') 0%, #0c0c0c 100%),url('${frontfirst}')`
-
-              console.log("Scroll Down");
-            } else {
-              // Scrolling Up with mouse
-              console.log("Scroll Up");
-            }
-          })
-        } */
+export default Home;
