@@ -186,37 +186,73 @@ const Filter = () => {
                 // alignItems: "center",
               }}
             >
-              <Typography
-                style={{
-                  fontSize: "40px",
-                  fontWeight: "200",
-                  lineHeight: "2.5",
-                }}
-              >
-                Rainmax Filter
-              </Typography>
+              <div>
+                <Typography
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: "200",
+                    lineHeight: "2.5",
+                  }}
+                >
+                  Features
+                </Typography>
 
-              <ul
-                style={{
-                  color: "white",
-                  fontSize: "18px",
-                  fontWeight: "200",
-                  lineHeight: "1.3em",
-                }}
-              >
-                <li>
-                  <Typography>Two-stage filtration</Typography>
-                </li>
-                <li>
-                  <Typography>Self-cleaning</Typography>
-                </li>
-                <li>
-                  <Typography>100 micron SS 304 mesh</Typography>
-                </li>
-                <li>
-                  <Typography>First flush system</Typography>
-                </li>
-              </ul>
+                <ul
+                  style={{
+                    color: "black",
+                    fontSize: "18px",
+                    fontWeight: "200",
+                    lineHeight: "1.3em",
+                  }}
+                >
+                  <li>
+                    <Typography>Two-stage filtration</Typography>
+                  </li>
+                  <li>
+                    <Typography>Self-cleaning</Typography>
+                  </li>
+                  <li>
+                    <Typography>100 micron SS 304 mesh</Typography>
+                  </li>
+                  <li>
+                    <Typography>First flush system</Typography>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <Typography
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: "200",
+                    lineHeight: "2.5",
+                  }}
+                >
+                  Benefits
+                </Typography>
+
+                <ul
+                  style={{
+                    color: "black",
+                    fontSize: "18px",
+                    fontWeight: "200",
+                    lineHeight: "1.3em",
+                  }}
+                >
+                  <li>
+                    <Typography>Most effective</Typography>
+                  </li>
+                  <li>
+                    <Typography>Affordability</Typography>
+                  </li>
+                  <li>
+                    <Typography>Easy-to-install</Typography>
+                  </li>
+                  <li>
+                    <Typography>Easy-to-maintain</Typography>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Grid>
 
@@ -229,6 +265,32 @@ const Filter = () => {
             sm={12}
             md={6}
           ></Grid>
+        </Grid>
+      </div>
+
+      <div style={{ height: "40vh" }}>
+        <Grid container>
+          <Grid item md={6}></Grid>
+          <Grid item md={6}>
+            <div
+              style={{
+                height: "700%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "1em",
+                }}
+              >
+                Easy installation and maintenance
+              </Typography>
+            </div>
+          </Grid>
         </Grid>
       </div>
     </>
