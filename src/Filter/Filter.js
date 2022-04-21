@@ -89,6 +89,31 @@ const Filter = () => {
           </Grid>
         </Grid>
       </div>
+
+      <div style={{ height: "40vh" }}>
+        <Grid container>
+          <Grid item md={6}>
+            <div
+              style={{
+                height: "700%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "1em",
+                }}
+              >
+                Product video - an introduction
+              </Typography>
+            </div>
+          </Grid>
+        </Grid>
+      </div>
     </>
   );
 };
