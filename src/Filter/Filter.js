@@ -1,6 +1,8 @@
 import React from "react";
 import filterpage from "../images/filterpage.jpg";
 import frontfilter1 from "../images/frontfilter1.jpg";
+import filterpic1 from "../images/filterpic1.jpg";
+import filterpic2 from "../images/filterpic2.jpg";
 import { Typography, Button, Grid } from "@material-ui/core";
 const Filter = () => {
   return (
@@ -112,6 +114,121 @@ const Filter = () => {
               </Typography>
             </div>
           </Grid>
+        </Grid>
+      </div>
+
+      <div style={{ marginRight: "40px" }}>
+        <Grid container>
+          {/* <Grid item sm={0} md={1}></Grid> */}
+
+          <Grid
+            style={{
+              backgroundImage: `url('${filterpic1}')`,
+              backgroundSize: "cover",
+            }}
+            item
+            sm={12}
+            md={6}
+          ></Grid>
+
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginLeft: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                How it works
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "200",
+                }}
+              >
+                Rainwater from the rooftop passes through downtake pipes and
+                enters the filter chamber. It filters through a fine 100-micron
+                stainless steel (SS) 304 grade mesh. Around 5-10% of this water,
+                along with leaves and debris, empties out through the waste
+                water outlet. The remaining water enters into the first flush
+                system, where initial turbid rainwater is trapped below the
+                float ball and drained through the ball valve. Clean water then
+                enters into the storage tank through the clean water outlet.
+              </Typography>
+            </div>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div style={{ marginLeft: "40px" }}>
+        <Grid container>
+          {/* <Grid item sm={0} md={1}></Grid> */}
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginRight: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                Rainmax Filter
+              </Typography>
+
+              <ul
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "200",
+                  lineHeight: "1.3em",
+                }}
+              >
+                <li>
+                  <Typography>Two-stage filtration</Typography>
+                </li>
+                <li>
+                  <Typography>Self-cleaning</Typography>
+                </li>
+                <li>
+                  <Typography>100 micron SS 304 mesh</Typography>
+                </li>
+                <li>
+                  <Typography>First flush system</Typography>
+                </li>
+              </ul>
+            </div>
+          </Grid>
+
+          <Grid
+            style={{
+              backgroundImage: `url('${filterpic2}')`,
+              backgroundSize: "cover",
+            }}
+            item
+            sm={12}
+            md={6}
+          ></Grid>
         </Grid>
       </div>
     </>
