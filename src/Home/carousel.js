@@ -1,9 +1,9 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import filter1000 from "./images/filter1000.png";
-import filter2000 from "./images/filter2000.png";
-import simplex from "./images/filtersimplex.png";
+import filter1000 from "../images/filter1000.png";
+import filter2000 from "../images/filter2000.png";
+import simplex from "../images/filtersimplex.png";
 
 const Cacomponent = () => {
   const breakPoints = [

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Typography, Button, Grid } from "@material-ui/core";
-import Nav from "./Nav/Nav.js";
-import frontfilter1 from "./images/frontfilter1.jpg";
-import frontfilter2 from "./images/frontfilter2.jpg";
-import frontfirst from "./images/frontfirst.jpg";
+import Nav from "../Nav/Nav.js";
+import frontfilter1 from "../images/frontfilter1.jpg";
+import frontfilter2 from "../images/frontfilter2.jpg";
+import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
 const App = () => {
