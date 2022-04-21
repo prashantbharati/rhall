@@ -28,6 +28,7 @@ const Home = () => {
           transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
+        <div style={{ height: "25vh" }}></div>
         {/* <div style={{ height: "15%" }}>
           <Nav />
         </div> */}
