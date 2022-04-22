@@ -1,5 +1,8 @@
 import React from "react";
+import { Typography, Grid } from "@material-ui/core";
 import aboutpage from "../images/aboutpage.jpg";
+import aboutfront1 from "../images/aboutfront1.jpg";
+import aboutfront2 from "../images/aboutfront2.png";
 const about = () => {
   return (
     <>
@@ -11,6 +14,59 @@ const about = () => {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
+
+      <div style={{ marginRight: "40px" }}>
+        <Grid container>
+          {/* <Grid item sm={0} md={1}></Grid> */}
+
+          <Grid
+            style={{
+              backgroundImage: `url('${aboutfront2}')`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            item
+            sm={12}
+            md={6}
+          ></Grid>
+
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginLeft: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                About Urban Ecology
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "200",
+                }}
+              >
+                Urban Ecology is a venture that seeks to build entrepreneurial
+                success in the areas of green architecture (using mudbrick
+                technology), urban farming, and rainwater harvesting. Rainmax is
+                an Urban Ecology brand. Visit our website by clicking the logo
+                on the left.
+              </Typography>
+            </div>
+          </Grid>
+        </Grid>
+      </div>
     </>
   );
 };
