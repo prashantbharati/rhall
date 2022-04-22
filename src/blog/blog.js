@@ -1,5 +1,7 @@
 import React from "react";
 import blogpage from "../images/blogpage.jpg";
+import Card from "./card";
+import { Grid, Container } from "@material-ui/core";
 const Blog = () => {
   return (
     <>
@@ -11,6 +13,24 @@ const Blog = () => {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
+
+      <Grid style={{ justify: "center" }} container spacing={3}>
+        <Grid item md={6}>
+          <Card />
+        </Grid>
+
+        <Grid item md={6}>
+          <Card />
+        </Grid>
+
+        <Grid item md={6}>
+          <Card />
+        </Grid>
+
+        <Grid item md={6}>
+          <Card />
+        </Grid>
+      </Grid>
     </>
   );
 };

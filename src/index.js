@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
 import App from "./App";
 import theme from "./theme";
-import Card from "./blog/card.js";
+// import Card from "./blog/card.js";
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Card />
+    <App />
   </ThemeProvider>,
   document.getElementById("root")
 );

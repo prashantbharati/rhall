@@ -4,7 +4,7 @@ import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 
 const Cardcomponent = (props) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardMedia
         component="img"
         height="140"
