@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./Home/Home.js";
 import Filter from "./Filter/Filter.js";
 import Iwell from "./iwell/iwell.js";
-
+import Blog from "./blog/blog.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Nav/Nav.js";
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/filter" exact element={<Filter />} />
         <Route path="/iwell" exact element={<Iwell />} />
+        <Route path="/blog" exact element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

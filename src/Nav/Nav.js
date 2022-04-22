@@ -38,7 +38,7 @@ const Nav = () => {
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="blog" className={classes.headerullia} href="#">
+            <a id="blog" className={classes.headerullia} href="/blog">
               BLOG
             </a>
           </li>
