@@ -6,7 +6,7 @@ const Cardcomponent = (props) => {
   return (
     <Card style={{ height: "600px", transition: "transform 1s" }}>
       <CardMedia
-        style={{ height: "400px" }}
+        style={{ height: "400px", transition: "transform 1s" }}
         component="img"
         image={props.img}
         alt="green iguana"

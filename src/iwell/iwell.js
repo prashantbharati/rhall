@@ -9,7 +9,7 @@ const Iwell = () => {
         style={{
           height: "80vh",
           backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.15) 0%, #A1A1A1 100%),url('${iwell}')`,
-          backgroundSize: "cover",
+          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
       ></div>
