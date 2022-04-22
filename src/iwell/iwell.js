@@ -92,6 +92,53 @@ const Iwell = () => {
           ></Grid>
         </Grid>
       </div>
+
+      <div style={{ marginRight: "40px" }}>
+        <Grid container>
+          {/* <Grid item sm={0} md={1}></Grid> */}
+
+          <Grid item sm={12} md={6}></Grid>
+
+          <Grid item sm={12} md={6}>
+            <div
+              style={{
+                height: "130vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                marginLeft: "20px",
+                // alignItems: "center",
+              }}
+            >
+              <Typography
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "200",
+                  lineHeight: "2.5",
+                }}
+              >
+                How it works
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "200",
+                }}
+              >
+                The Rainmax Injection Well System, which recharges shallow
+                aquifers, is especially effective in granitic soils where
+                surface harvesting pits are rendered ineffective. Rainwater from
+                the rooftop or ground surface enters into the desilting chamber
+                where heavy particles are trapped. The water then passes through
+                filtration media and enters a shallow borewell, thereby
+                recharging the aquifers. This also results in an increase in the
+                groundwater table in surrounding areas.
+              </Typography>
+            </div>
+          </Grid>
+        </Grid>
+      </div>
     </>
   );
 };
