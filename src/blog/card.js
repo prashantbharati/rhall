@@ -1,23 +1,23 @@
 import React from "react";
-import frontfilter from "../images/frontfilter1.jpg";
+
 import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 
 const Cardcomponent = (props) => {
   return (
-    <Card>
+    <Card style={{ height: "70vh" }}>
       <CardMedia
+        style={{ height: "70%" }}
         component="img"
         height="140"
-        image={frontfilter}
+        image={props.img}
         alt="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {props.heading}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {props.text}
         </Typography>
       </CardContent>
     </Card>
