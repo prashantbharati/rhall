@@ -4,13 +4,24 @@ import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 
 const Cardcomponent = (props) => {
   return (
-    <Card style={{ height: "70vh" }}>
+    <Card style={{ height: "600px", transition: "transform 1s" }}>
       <CardMedia
-        style={{ height: "70%" }}
+        style={{ height: "400px" }}
         component="img"
-        height="140"
         image={props.img}
         alt="green iguana"
+        onMouseOver={(e) =>
+          (e.currentTarget.style = {
+            transform: "scale(1.5)",
+            overflow: "hidden",
+          })
+        }
+        onMouseOut={(e) =>
+          (e.currentTarget.style = {
+            transform: "scale(1)",
+            overflow: "hidden",
+          })
+        }
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
