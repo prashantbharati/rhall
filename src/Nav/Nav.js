@@ -43,7 +43,7 @@ const Nav = () => {
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="aboutus" className={classes.headerullia} href="#">
+            <a id="aboutus" className={classes.headerullia} href="/about">
               ABOUT US
             </a>
           </li>
