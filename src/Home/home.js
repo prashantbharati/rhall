@@ -159,14 +159,16 @@ const Home = () => {
             height: "15vh",
             color: "white",
           }}
-        >
-          {/* <h1>lol what</h1> */}
-        </div>
+        ></div>
 
         {
           (window.onscroll = () => {
             let opacity = eopacity;
-            if (oldScroll > window.scrollY) {
+            {
+              /* console.log(window.scrollY); */
+            }
+            if (window.scrollY === 1) seteopacity(0.33);
+            else if (oldScroll > window.scrollY) {
               seteopacity(opacity - 0.01);
             } else {
               seteopacity(opacity + 0.01);
