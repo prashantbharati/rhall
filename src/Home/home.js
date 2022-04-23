@@ -200,6 +200,7 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                 }}
+                className=" w3-animate-left"
               >
                 <div
                   style={{
@@ -259,6 +260,7 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                 }}
+                className="w3-animate-bottom"
               >
                 <div
                   style={{
@@ -322,6 +324,7 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                 }}
+                className="w3-animate-right"
               >
                 <div
                   style={{
