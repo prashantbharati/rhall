@@ -6,6 +6,9 @@ const theme = createTheme({
   },
 
   typography: {
+    h1: {
+      fontFamily: '"Poppins", Open Sans',
+    },
     fontFamily: ['"Montserrat"', "Open Sans"].join(","),
   },
 });

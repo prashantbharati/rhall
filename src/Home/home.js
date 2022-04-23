@@ -9,6 +9,7 @@ import useStyles from "./styles.js";
 const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
+  const [oldScroll, setoldScroll] = useState(eopacity);
   console.log(eopacity);
 
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <div
         id="topdiv"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.36) 0%, #0c0c0c 100%),url('${frontfirst}')`,
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,${eopacity}) 0%, #0c0c0c 100%),url('${frontfirst}')`,
           backgroundAttachment: "fixed",
           width: "100%",
           height: "200vh",
@@ -164,12 +165,13 @@ const Home = () => {
 
         {
           (window.onscroll = () => {
-            let newval = eopacity + 0.1;
-            let newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-
-            let value = Math.min(newScrollHeight / 100, 1);
-            newval = Math.min(newval, 1);
-            seteopacity(newval);
+            let opacity = eopacity;
+            if (oldScroll > window.scrollY) {
+              seteopacity(opacity - 0.01);
+            } else {
+              seteopacity(opacity + 0.01);
+            }
+            setoldScroll(window.scrollY);
           })
         }
 

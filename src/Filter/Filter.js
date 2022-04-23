@@ -14,7 +14,21 @@ const Filter = () => {
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      >
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+        <br />
+        <Typography
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            fontSize: "90px",
+            fontWeight: "500",
+          }}
+          // variant="h1"
+        >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rainmax Filters
+        </Typography>
+      </div>
 
       <div style={{ marginRight: "40px" }}>
         <Grid container>
