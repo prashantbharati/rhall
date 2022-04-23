@@ -7,7 +7,11 @@ import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDroplet,
+  faHouseFloodWater,
+  faIndianRupeeSign,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const classes = useStyles();
@@ -171,7 +175,72 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div style={{ height: "30vh", backgroundColor: "#0c0c0c" }}>
+        <div
+          style={{
+            height: "30vh",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#0c0c0c",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                width: "100px",
+                height: "100px",
+                borderRadius: "50%",
+                border: "4px solid",
+                borderColor: "white",
+
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  width: "4em",
+                  height: "4em",
+                  position: "relative",
+                  display: "block",
+                  color: "white",
+                }}
+                icon={faDroplet}
+              />
+            </div>
+
+            <Typography
+              style={{
+                fontSize: "20px",
+                fontWeight: "500",
+                textTransform: "none",
+                color: "#ffffff",
+              }}
+            >
+              Water Supply
+            </Typography>
+
+            <Typography
+              style={{
+                color: "#7E7979",
+                fontWeight: "300",
+                fontSize: "1em",
+              }}
+            >
+              Ensures continuous water supply for your family, recharges dead
+              borewells and improves quality of groundwater.
+            </Typography>
+          </div>
+
           <div
             style={{
               width: "100px",
@@ -194,6 +263,31 @@ const Home = () => {
                 color: "white",
               }}
               icon={faIndianRupeeSign}
+            />
+          </div>
+
+          <div
+            style={{
+              width: "100px",
+              height: "100px",
+              borderRadius: "50%",
+              border: "4px solid",
+              borderColor: "white",
+
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <FontAwesomeIcon
+              style={{
+                width: "4em",
+                height: "4em",
+                position: "relative",
+                display: "block",
+                color: "white",
+              }}
+              icon={faHouseFloodWater}
             />
           </div>
         </div>
