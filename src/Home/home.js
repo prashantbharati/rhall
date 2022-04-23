@@ -171,8 +171,31 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div style={{ height: "30vh", backgroundColor: "white" }}>
-          <FontAwesomeIcon icon={faIndianRupeeSign} />
+        <div style={{ height: "30vh", backgroundColor: "#0c0c0c" }}>
+          <div
+            style={{
+              width: "100px",
+              height: "100px",
+              borderRadius: "50%",
+              border: "4px solid",
+              borderColor: "white",
+
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <FontAwesomeIcon
+              style={{
+                width: "4em",
+                height: "4em",
+                position: "relative",
+                display: "block",
+                color: "white",
+              }}
+              icon={faIndianRupeeSign}
+            />
+          </div>
         </div>
 
         <div style={{ backgroundColor: "white" }}>
