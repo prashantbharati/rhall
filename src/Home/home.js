@@ -6,9 +6,9 @@ import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
-import { FaRupee, FaRupeeSign } from "react-icons/fa";
-import Currency from "react-currency-icons";
-import rupeesign1 from "../images/rupeesign1.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
@@ -171,8 +171,8 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div style={{ height: "30vh" }}>
-          <Currency style={{ color: "white" }} code="INR" size="large" />
+        <div style={{ height: "30vh", backgroundColor: "white" }}>
+          <FontAwesomeIcon icon={faIndianRupeeSign} />
         </div>
 
         <div style={{ backgroundColor: "white" }}>
