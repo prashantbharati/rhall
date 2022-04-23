@@ -6,6 +6,8 @@ import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
+import { FaRupee, FaRupeeSign } from "react-icons/fa";
+import rupeesign1 from "../images/rupeesign1.png";
 const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
@@ -30,9 +32,6 @@ const Home = () => {
         }}
       >
         <div style={{ height: "25vh" }}></div>
-        {/* <div style={{ height: "15%" }}>
-          <Nav />
-        </div> */}
 
         <div
           style={{
@@ -153,21 +152,13 @@ const Home = () => {
           </Grid>
         </div>
 
-        <div
-          style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 0%, #111111)`,
-            height: "15vh",
-            color: "white",
-          }}
-        ></div>
-
         {
           (window.onscroll = () => {
             let opacity = eopacity;
-            {
-              /* console.log(window.scrollY); */
-            }
-            if (window.scrollY === 1) seteopacity(0.33);
+
+            /* console.log(window.scrollY); */
+
+            if (window.scrollY === 0) seteopacity(0.33);
             else if (oldScroll > window.scrollY) {
               seteopacity(opacity - 0.01);
             } else {
@@ -176,6 +167,12 @@ const Home = () => {
             setoldScroll(window.scrollY);
           })
         }
+        <br />
+        <br />
+        <br />
+        <div style={{ height: "30vh", backgroundColor: "#0c0c0c" }}>
+          <FontAwesomeIcon icon="fad fa-rupee-sign" />
+        </div>
 
         <div style={{ backgroundColor: "white" }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
