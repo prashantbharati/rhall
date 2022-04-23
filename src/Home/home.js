@@ -177,7 +177,7 @@ const Home = () => {
         <br />
         <div
           style={{
-            height: "30vh",
+            height: "50vh",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -187,6 +187,11 @@ const Home = () => {
         >
           <Grid container>
             <Grid item md={4}>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <div
                 style={{
                   display: "flex",
@@ -231,12 +236,12 @@ const Home = () => {
                 >
                   Water Supply
                 </Typography>
-
+                <br />
                 <Typography
                   style={{
                     color: "#7E7979",
                     fontWeight: "300",
-                    fontSize: "1em",
+                    fontSize: "12px",
                   }}
                 >
                   Ensures continuous water supply for your family, recharges
@@ -289,12 +294,12 @@ const Home = () => {
                 >
                   Cost Saving
                 </Typography>
-
+                <br />
                 <Typography
                   style={{
                     color: "#7E7979",
                     fontWeight: "300",
-                    fontSize: "1em",
+                    fontSize: "12px",
                   }}
                 >
                   Helps save money spent on water tankers. Your initial
@@ -304,6 +309,11 @@ const Home = () => {
             </Grid>
 
             <Grid item md={4}>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <div
                 style={{
                   display: "flex",
@@ -347,12 +357,12 @@ const Home = () => {
                 >
                   Reduced Flooding
                 </Typography>
-
+                <br />
                 <Typography
                   style={{
                     color: "#7E7979",
                     fontWeight: "300",
-                    fontSize: "1em",
+                    fontSize: "12px",
                   }}
                 >
                   Prevents the runoff of rooftop rainwater, thereby helping
