@@ -7,6 +7,7 @@ import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
 import { FaRupee, FaRupeeSign } from "react-icons/fa";
+import Currency from "react-currency-icons";
 import rupeesign1 from "../images/rupeesign1.png";
 const Home = () => {
   const classes = useStyles();
@@ -170,8 +171,8 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div style={{ height: "30vh", backgroundColor: "#0c0c0c" }}>
-          <FontAwesomeIcon icon="fad fa-rupee-sign" />
+        <div style={{ height: "30vh" }}>
+          <Currency style={{ color: "white" }} code="INR" size="large" />
         </div>
 
         <div style={{ backgroundColor: "white" }}>
