@@ -185,111 +185,182 @@ const Home = () => {
             backgroundColor: "#0c0c0c",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <div
-              style={{
-                width: "100px",
-                height: "100px",
-                borderRadius: "50%",
-                border: "4px solid",
-                borderColor: "white",
-
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <FontAwesomeIcon
+          <Grid container>
+            <Grid item md={4}>
+              <div
                 style={{
-                  width: "4em",
-                  height: "4em",
-                  position: "relative",
-                  display: "block",
-                  color: "white",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
                 }}
-                icon={faDroplet}
-              />
-            </div>
+              >
+                <div
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                    borderRadius: "50%",
+                    border: "4px solid",
+                    borderColor: "white",
 
-            <Typography
-              style={{
-                fontSize: "20px",
-                fontWeight: "500",
-                textTransform: "none",
-                color: "#ffffff",
-              }}
-            >
-              Water Supply
-            </Typography>
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{
+                      width: "4em",
+                      height: "4em",
+                      position: "relative",
+                      display: "block",
+                      color: "white",
+                    }}
+                    icon={faDroplet}
+                  />
+                </div>
 
-            <Typography
-              style={{
-                color: "#7E7979",
-                fontWeight: "300",
-                fontSize: "1em",
-              }}
-            >
-              Ensures continuous water supply for your family, recharges dead
-              borewells and improves quality of groundwater.
-            </Typography>
-          </div>
+                <Typography
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "500",
+                    textTransform: "none",
+                    color: "#ffffff",
+                  }}
+                >
+                  Water Supply
+                </Typography>
 
-          <div
-            style={{
-              width: "100px",
-              height: "100px",
-              borderRadius: "50%",
-              border: "4px solid",
-              borderColor: "white",
+                <Typography
+                  style={{
+                    color: "#7E7979",
+                    fontWeight: "300",
+                    fontSize: "1em",
+                  }}
+                >
+                  Ensures continuous water supply for your family, recharges
+                  dead borewells and improves quality of groundwater.
+                </Typography>
+              </div>
+            </Grid>
 
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <FontAwesomeIcon
-              style={{
-                width: "4em",
-                height: "4em",
-                position: "relative",
-                display: "block",
-                color: "white",
-              }}
-              icon={faIndianRupeeSign}
-            />
-          </div>
+            <Grid item md={4}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                    borderRadius: "50%",
+                    border: "4px solid",
+                    borderColor: "white",
 
-          <div
-            style={{
-              width: "100px",
-              height: "100px",
-              borderRadius: "50%",
-              border: "4px solid",
-              borderColor: "white",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{
+                      width: "4em",
+                      height: "4em",
+                      position: "relative",
+                      display: "block",
+                      color: "white",
+                    }}
+                    icon={faIndianRupeeSign}
+                  />
+                </div>
+                <Typography
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "500",
+                    textTransform: "none",
+                    color: "#ffffff",
+                  }}
+                >
+                  Cost Saving
+                </Typography>
 
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <FontAwesomeIcon
-              style={{
-                width: "4em",
-                height: "4em",
-                position: "relative",
-                display: "block",
-                color: "white",
-              }}
-              icon={faHouseFloodWater}
-            />
-          </div>
+                <Typography
+                  style={{
+                    color: "#7E7979",
+                    fontWeight: "300",
+                    fontSize: "1em",
+                  }}
+                >
+                  Helps save money spent on water tankers. Your initial
+                  investment is recovered in under a year.
+                </Typography>
+              </div>
+            </Grid>
+
+            <Grid item md={4}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                    borderRadius: "50%",
+                    border: "4px solid",
+                    borderColor: "white",
+
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{
+                      width: "4em",
+                      height: "4em",
+                      position: "relative",
+                      display: "block",
+                      color: "white",
+                    }}
+                    icon={faHouseFloodWater}
+                  />
+                </div>
+                <Typography
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "500",
+                    textTransform: "none",
+                    color: "#ffffff",
+                  }}
+                >
+                  Reduced Flooding
+                </Typography>
+
+                <Typography
+                  style={{
+                    color: "#7E7979",
+                    fontWeight: "300",
+                    fontSize: "1em",
+                  }}
+                >
+                  Prevents the runoff of rooftop rainwater, thereby helping
+                  reduce the possibility of Urban Flooding.
+                </Typography>
+              </div>
+            </Grid>
+          </Grid>
         </div>
 
         <div style={{ backgroundColor: "white" }}>
