@@ -14,23 +14,24 @@ export default makeStyles((theme) => ({
     zIndex: "10000",
   },
 
+  headersticky: {
+    padding: "5px 100px",
+    background: "rgba(0, 0, 0, 0.45);",
+    backdropFilter: "saturate(180%) blur(20px)",
+  },
+
   button: {
     // display: "table-cell",
     backgroundColor: "#68CBC1",
     color: "white",
     textTransform: "uppercase",
     letterSpacing: "0.2px",
-
+    maxWidth: "30em",
     borderStyle: "none",
     borderRadius: "999px 999px 999px 999px",
     boxShadow: "0px 5px 15px 0px rgb(39 48 112 / 51%)",
   },
 
-  headersticky: {
-    padding: "5px 100px",
-    background: "rgba(0, 0, 0, 0.45);",
-    backdropFilter: "saturate(180%) blur(20px)",
-  },
   headerlogo: {
     position: "relative",
     fontWeight: "700",
@@ -40,6 +41,18 @@ export default makeStyles((theme) => ({
     fontFamily: "Montserrat",
     textTransform: "uppercase",
     letterSpacing: "2px",
+  },
+  headerstickylogo: {
+    position: "relative",
+
+    // color: "#fff",
+    textDecoration: "none",
+    fontSize: "1.1em",
+    fontWeight: "500",
+    fontFamily: "Montserrat",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
+    color: "#fff",
   },
 
   headerul: {
@@ -58,7 +71,7 @@ export default makeStyles((theme) => ({
 
   headerullia: {
     position: "relative",
-    margin: "0 14px",
+    margin: "0 20px",
     textDecoration: "none",
     color: "#fff",
     letterSpacing: "1px",
@@ -72,19 +85,6 @@ export default makeStyles((theme) => ({
     height: "100vh",
     background: "url(admin-ajax.jpg)",
     backgroundSize: "cover",
-  },
-
-  headerstickylogo: {
-    position: "relative",
-
-    // color: "#fff",
-    textDecoration: "none",
-    fontSize: "17px",
-    fontWeight: "500",
-    fontFamily: "Montserrat",
-    textTransform: "uppercase",
-    letterSpacing: "2px",
-    color: "#fff",
   },
 
   headerstickyullia: {
