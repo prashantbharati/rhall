@@ -168,7 +168,7 @@ const Home = () => {
             var opacity = 0.36;
 
             if (scrollTop > distanceToTop) {
-              opacity = 0.36 + (scrollTop - distanceToTop) / elementHeight;
+              opacity = 0.5 + (scrollTop - distanceToTop) / elementHeight;
             }
 
             console.log(distanceToTop, elementHeight, scrollTop);
@@ -190,7 +190,7 @@ const Home = () => {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#0c0c0c",
+            backgroundColor: "black",
           }}
         >
           <Grid container>
@@ -387,7 +387,7 @@ const Home = () => {
         <div style={{ backgroundColor: "white" }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#0c0c0c"
+              fill="black"
               fill-opacity="3"
               d="M0,64L240,192L480,192L720,256L960,64L1200,128L1440,192L1440,0L1200,0L960,0L720,0L480,0L240,0L0,0Z"
             ></path>
