@@ -58,7 +58,7 @@ export default makeStyles((theme) => ({
 
   headerullia: {
     position: "relative",
-    margin: "0 15px",
+    margin: "0 14px",
     textDecoration: "none",
     color: "#fff",
     letterSpacing: "1px",

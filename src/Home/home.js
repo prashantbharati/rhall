@@ -159,25 +159,33 @@ const Home = () => {
 
         {
           (window.onscroll = () => {
-            let opacity = eopacity;
+            var header = document.getElementById("topdiv");
+            var distanceToTop =
+              window.pageYOffset + header.getBoundingClientRect().top;
+            var elementHeight = header.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
 
-            /* console.log(window.scrollY); */
+            var opacity = 0.36;
 
-            if (window.scrollY === 0) seteopacity(0.33);
-            else if (oldScroll > window.scrollY) {
-              seteopacity(opacity - 0.01);
-            } else {
-              seteopacity(opacity + 0.01);
+            if (scrollTop > distanceToTop) {
+              opacity = 0.36 + (scrollTop - distanceToTop) / elementHeight;
             }
-            setoldScroll(window.scrollY);
+
+            console.log(distanceToTop, elementHeight, scrollTop);
+            if (opacity >= 0) {
+              /* header.style.opacity = opacity; */
+
+              seteopacity(opacity);
+            }
           })
         }
+
         <br />
         <br />
         <br />
         <div
           style={{
-            height: "50vh",
+            height: "30vh",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -471,6 +479,7 @@ const Home = () => {
             style={{
               backgroundImage: `url('${frontfilter1}')`,
               backgroundSize: "cover",
+              width: "100%",
             }}
             item
             sm={12}
