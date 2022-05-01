@@ -13,7 +13,22 @@ const about = () => {
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      >
+        {" "}
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+        <br />
+        <Typography
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            fontSize: "90px",
+            fontWeight: "500",
+          }}
+          // variant="h1"
+        >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us
+        </Typography>
+      </div>
 
       <div style={{ marginLeft: "40px" }}>
         <Grid container>
@@ -72,16 +87,26 @@ const about = () => {
         <Grid container>
           {/* <Grid item sm={0} md={1}></Grid> */}
 
-          <Grid
-            style={{
-              backgroundImage: `url('${aboutfront2}')`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-            item
-            sm={12}
-            md={6}
-          ></Grid>
+          <Grid item style={{ backgroundColor: "" }} sm={12} md={6}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+                backgroundImage: `url('${aboutfront2}')`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </Grid>
 
           <Grid item sm={12} md={6}>
             <div

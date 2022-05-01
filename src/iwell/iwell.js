@@ -12,7 +12,21 @@ const Iwell = () => {
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      >
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+        <br />
+        <Typography
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            fontSize: "90px",
+            fontWeight: "500",
+          }}
+          // variant="h1"
+        >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Injection Well System
+        </Typography>
+      </div>
 
       <div style={{ boxSizing: "border-box", marginLeft: "40px" }}>
         <Grid container>

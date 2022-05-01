@@ -5,7 +5,7 @@ import card2 from "../images/card2.jpg";
 import card3 from "../images/card3.jpg";
 import card4 from "../images/card4.jpg";
 import Card from "./card";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 const Blog = () => {
   return (
     <>
@@ -16,7 +16,22 @@ const Blog = () => {
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      >
+        {" "}
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+        <br />
+        <Typography
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            fontSize: "90px",
+            fontWeight: "500",
+          }}
+          // variant="h1"
+        >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Rainmax Blog
+        </Typography>
+      </div>
 
       <br />
       <br />
