@@ -4,12 +4,7 @@ import { Grid, Typography } from "@material-ui/core";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faFacebookF,
-  faGoogle,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const aboutuscard = (props) => {
   return (
