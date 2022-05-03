@@ -6,6 +6,7 @@ import Blog from "./blog/blog.js";
 import About from "./aboutus/about";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Nav/Nav.js";
+import Footer from "./footer.js";
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/about" exact element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
