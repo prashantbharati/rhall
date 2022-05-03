@@ -1,9 +1,19 @@
 import React from "react";
 import sai from "../images/sai.png";
 import { Grid, Typography } from "@material-ui/core";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faFacebookF,
+  faGoogle,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
 const aboutuscard = () => {
   return (
-    <div style={{ height: "100vh", width: "50%", backgroundColor: "#686868" }}>
+    <div style={{ height: "140vh", width: "50%", backgroundColor: "#686868" }}>
       <Grid container style={{ bottomMargin: "0" }}>
         <Grid item md={1}></Grid>
         <Grid item md={3}>
@@ -62,6 +72,60 @@ const aboutuscard = () => {
             He is a vocal proponent of the superiority of Hyderabadi biryani and
             Irani chai.
           </Typography>
+          <br />
+          <div
+            style={{
+              height: "40px",
+              width: "40px",
+              display: "inline-block",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "white",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  height: "1.5em",
+                  position: "relative",
+                  display: "inline-block",
+                  color: "black",
+                }}
+                icon={faFacebookF}
+              />
+            </div>
+          </div>
+          &nbsp;
+          <div
+            style={{
+              height: "40px",
+              width: "40px",
+              display: "inline-block",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "white",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  height: "1.5em",
+                  position: "relative",
+                  display: "inline-block",
+                  color: "black",
+                }}
+                icon={faLinkedin}
+              />
+            </div>
+          </div>
         </Grid>
       </Grid>
     </div>
