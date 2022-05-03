@@ -17,10 +17,10 @@ const aboutuscard = (props) => {
       <Grid container style={{ bottomMargin: "0" }} spacing={4}>
         <Grid item md={1}></Grid>
         <Grid item md={3}>
-          <img style={{ height: "50%" }} src={sai} alt="saiimage" />
+          <img style={{ height: "125px" }} src={props.img} alt="saiimage" />
         </Grid>
 
-        <Grid item md={4}>
+        <Grid item md={6}>
           <Typography
             style={{
               marginBottom: "22px",
@@ -47,10 +47,23 @@ const aboutuscard = (props) => {
           </Typography>
         </Grid>
       </Grid>
-
-      <Grid container style={{ position: "relative", bottom: "70px" }}>
+      <br />
+      <Grid container style={{ position: "relative", top: "20px" }}>
         <Grid item md={1}></Grid>
         <Grid item md={8}>
+          <Typography
+            style={{
+              textAlign: "justify",
+              color: "black",
+              fontFamily: "Montserrat",
+              fontSize: "18px",
+              fontWeight: "200",
+              lineHeight: "1.5em",
+              letterSpacing: "1px",
+            }}
+          >
+            {props.job}
+          </Typography>
           <Typography
             style={{
               textAlign: "justify",
