@@ -11,6 +11,11 @@ import {
   faDroplet,
   faHouseFloodWater,
   faIndianRupeeSign,
+  faMillSign,
+  faMoneyBill,
+  faPercent,
+  faPercentage,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -397,7 +402,7 @@ const Home = () => {
 
       <div
         style={{
-          height: "80vh",
+          height: "110vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -407,6 +412,8 @@ const Home = () => {
       >
         {}
 
+        <br />
+        <br />
         <Typography
           style={{
             fontSize: "40px",
@@ -432,6 +439,82 @@ const Home = () => {
             flooding.
           </Typography>
         </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Grid container>
+          <Grid item md={4} sm={12}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  width: "4em",
+                  height: "4em",
+                  position: "relative",
+                  display: "block",
+                  color: "#5b360d",
+                }}
+                icon={faPercent}
+              />
+              <Typography>SUCCESS RATE</Typography>
+            </div>
+          </Grid>
+
+          <Grid item md={4} sm={12}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  width: "4em",
+                  height: "4em",
+                  position: "relative",
+                  display: "block",
+                  color: "#5b360d",
+                }}
+                icon={faPlus}
+              />
+              <Typography>HOUSEHOLDS SERVED</Typography>
+            </div>
+          </Grid>
+
+          <Grid item md={4} sm={12}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FontAwesomeIcon
+                style={{
+                  width: "4em",
+                  height: "4em",
+                  position: "relative",
+                  display: "block",
+                  color: "#5b360d",
+                }}
+                icon={faMoneyBill}
+              />
+              <Typography>LITRES SAVED</Typography>
+            </div>
+          </Grid>
+        </Grid>
       </div>
 
       <div style={{ marginLeft: "40px" }}>
