@@ -149,8 +149,8 @@ const about = () => {
         </Grid>
       </div>
 
-      <Grid container>
-        <Grid item md={5} style={{ marginLeft: "30px" }}>
+      <Grid container spacing={10}>
+        <Grid item md={6} style={{ marginLeft: "30px" }}>
           <Acard
             img={sai}
             name="Sai Prasad Renugunta"

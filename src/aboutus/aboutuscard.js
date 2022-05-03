@@ -59,7 +59,7 @@ const aboutuscard = (props) => {
               fontSize: "18px",
               fontWeight: "200",
               lineHeight: "1.5em",
-              letterSpacing: "1px",
+              letterSpacing: "0.3px",
             }}
           >
             {props.job}
