@@ -27,6 +27,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import amazon from "../images/amazon.png";
+
 const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
@@ -636,7 +638,7 @@ const Home = () => {
 
       <div style={{ height: "100vh", backgroundColor: "white" }}>
         <Grid container>
-          <Grid item md={1}></Grid>
+          <Grid item md={2}></Grid>
           <Grid item md={5}>
             <br /> <br /> <br />
             <Typography
@@ -654,6 +656,11 @@ const Home = () => {
             >
               Buy online.
             </Typography>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img src={amazon} style={{ height: "50px" }} alt="amazonimage" />
+            <br />
+            <br />
             <Typography
               style={{
                 color: "#494949",
