@@ -11,15 +11,16 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const aboutuscard = () => {
+const aboutuscard = (props) => {
   return (
-    <div style={{ height: "140vh", width: "50%", backgroundColor: "#686868" }}>
-      <Grid container style={{ bottomMargin: "0" }}>
+    <div style={{ height: "140vh", width: "100%", backgroundColor: "#686868" }}>
+      <Grid container style={{ bottomMargin: "0" }} spacing={4}>
         <Grid item md={1}></Grid>
         <Grid item md={3}>
           <img style={{ height: "50%" }} src={sai} alt="saiimage" />
         </Grid>
-        <Grid item md={2}>
+
+        <Grid item md={4}>
           <Typography
             style={{
               marginBottom: "22px",
@@ -29,7 +30,7 @@ const aboutuscard = () => {
               fontSize: "35px",
             }}
           >
-            Sai Prasad Renugunta
+            {props.name}
           </Typography>
 
           <Typography
@@ -42,12 +43,12 @@ const aboutuscard = () => {
               lineHeight: "0.1em",
             }}
           >
-            FOUNDER
+            {props.post}
           </Typography>
         </Grid>
       </Grid>
 
-      <Grid container style={{ position: "relative", bottom: "50px" }}>
+      <Grid container style={{ position: "relative", bottom: "70px" }}>
         <Grid item md={1}></Grid>
         <Grid item md={8}>
           <Typography
@@ -61,16 +62,7 @@ const aboutuscard = () => {
               letterSpacing: "1px",
             }}
           >
-            Sustainable Architect | Green Entrepreneur A firm believer in the
-            vital need for eco-friendly technologies, Sai spends much of his
-            time developing and incorporating these into his decade-long
-            architecture and design practice. A chance visit to the township of
-            Auroville some years ago, led him to develop a keen interest in
-            mud-based construction, rainwater harvesting, and organic farming,
-            and pursue these concepts with entrepreneurial vigour. Sai affirms
-            that long drives and working out are his keys to stress management.
-            He is a vocal proponent of the superiority of Hyderabadi biryani and
-            Irani chai.
+            {props.content}
           </Typography>
           <br />
           <div

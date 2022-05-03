@@ -3,6 +3,7 @@ import { Typography, Grid } from "@material-ui/core";
 import aboutpage from "../images/aboutpage.jpg";
 import aboutfront1 from "../images/aboutfront1.jpg";
 import aboutfront2 from "../images/aboutfront2.png";
+import Acard from "./aboutuscard.js";
 const about = () => {
   return (
     <>
@@ -145,6 +146,19 @@ const about = () => {
           </Grid>
         </Grid>
       </div>
+
+      <Grid container>
+        <Grid item md={5}>
+          <Acard
+            name="Sai Prasad Renugunta"
+            post="FOUNDER"
+            content="Sustainable Architect | Green Entrepreneur
+
+A firm believer in the vital need for eco-friendly technologies, Sai spends much of his time developing and incorporating these into his decade-long architecture and design practice. A chance visit to the township of Auroville some years ago, led him to develop a keen interest in mud-based construction, rainwater harvesting, and organic farming, and pursue these concepts with entrepreneurial vigour.
+Sai affirms that long drives and working out are his keys to stress management. He is a vocal proponent of the superiority of Hyderabadi biryani and Irani chai."
+          />
+        </Grid>
+      </Grid>
     </>
   );
 };
