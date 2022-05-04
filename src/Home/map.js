@@ -10,68 +10,13 @@ import {
 import mapStyles from "./mapstyles";
 
 const MapWrapped = withScriptjs(
-  withGoogleMap((props) => {
-    useEffect(() => {
-      const listener = (e) => {
-        if (e.key === "Escape") {
-        }
-      };
-      window.addEventListener("keydown", listener);
-      // console.log(selectedPark);
-      return () => {
-        window.removeEventListener("keydown", listener);
-      };
-    }, []);
-
+  withGoogleMap(() => {
     return (
       <GoogleMap
         defaultZoom={5}
-        defaultCenter={{ lat: props.lat, lng: props.lng }}
-        defaultOptions={{ styles: mapStyles }}
-      >
-        {/* {selectedPark && (
-          <InfoWindow
-            style={{ backgroundColor: "black" }}
-            onCloseClick={() => {
-              setSelectedPark(null);
-            }}
-            position={{
-              lat: selectedPark.geometry[0],
-              lng: selectedPark.geometry[1],
-            }}
-          >
-            <div style={{ backgroundColor: "#9e9e9e", color: "black" }}>
-              <Typography variant="h1">{selectedPark.Name}</Typography>
-
-              <div
-                style={{
-                  display: "flexbox",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
-                <Typography variant="h2" style={{ fontWeight: "bold" }}>
-                  Av. Annual Rainfall (mm)
-                </Typography>
-                <Typography variant="h3">{selectedPark.rain}</Typography>
-              </div>
-
-              <div
-                style={{
-                  display: "flexbox",
-                  flexDirection: "row",
-                  gap: "30px",
-                }}
-              >
-                <Typography variant="h2" style={{ fontWeight: "bold" }}>
-                  Rainy days
-                </Typography>
-                <Typography variant="h3">{selectedPark.days}</Typography>
-              </div>
-            </div>
-          </InfoWindow>
-        )} */}
-      </GoogleMap>
+        defaultCenter={{ lat: 17.385044, lng: 78.486671 }}
+        defaultOptions={{}}
+      ></GoogleMap>
     );
   })
 );
