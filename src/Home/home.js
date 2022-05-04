@@ -7,6 +7,7 @@ import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
 import useStyles from "./styles.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Map from "./map.js";
 import {
   faDroplet,
   faHouseFloodWater,
@@ -636,7 +637,7 @@ const Home = () => {
 
       {/* Map div begins */}
 
-      <div style={{ height: "100vh", backgroundColor: "white" }}>
+      <div style={{ height: "110vh", backgroundColor: "white" }}>
         <Grid container>
           <Grid item md={2}></Grid>
           <Grid item md={5}>
@@ -859,6 +860,10 @@ const Home = () => {
                 />
               </div>
             </div>
+          </Grid>
+
+          <Grid item md={5}>
+            <Map lag={17.385044} long={78.486671} />
           </Grid>
         </Grid>
       </div>
