@@ -674,8 +674,63 @@ const Home = () => {
             What customers say?
           </Typography>
           <br /> <br /> <br /> <br /> <br />
-          <Grid container>
+          <Grid container spacing={3}>
             <Grid item md={2}></Grid>
+
+            <Grid item md={3}>
+              <FontAwesomeIcon
+                style={{
+                  height: "3em",
+                  width: "3em",
+                  position: "relative",
+                  display: "inline-block",
+                  color: "#bfbfbf",
+                  paddingLeft: "20px",
+                }}
+                icon={faQuoteLeft}
+              />
+
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "16px",
+                  fontWeight: "300",
+                  lineHeight: "2em",
+                  marginLeft: "20px",
+                }}
+              >
+                We are a stand-alone apartment building of 25 flats, and depend
+                on water tankers year around. After implementing rooftop
+                rainwater harvesting, we saved around 75 tankers of water in the
+                monsoon, resulting in monetary savings of Rs. 60,000.
+              </Typography>
+              <br />
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  lineHeight: "1.5",
+                  marginLeft: "20px",
+                }}
+              >
+                Shekhar
+              </Typography>
+
+              <Typography
+                style={{
+                  color: "#bfbfbf",
+                  fontSize: "15px",
+                  fontWeight: "300",
+                  textTransform: "uppercase",
+                  lineHeight: "1.6em",
+                  letterSpacing: "3px",
+                  marginLeft: "20px",
+                }}
+              >
+                SAI LAKSHMI ARCADE KPHB, HYDERABAD
+              </Typography>
+            </Grid>
 
             <Grid item md={2}>
               <FontAwesomeIcon
@@ -696,12 +751,13 @@ const Home = () => {
                   fontSize: "16px",
                   fontWeight: "300",
                   lineHeight: "2em",
+                  marginLeft: "20px",
                 }}
               >
-                We are a stand-alone apartment building of 25 flats, and depend
-                on water tankers year around. After implementing rooftop
-                rainwater harvesting, we saved around 75 tankers of water in the
-                monsoon, resulting in monetary savings of Rs. 60,000.
+                Rooftop rainwater harvesting has been a godsend. Not only have
+                we swiftly recovered our initial investment in the filters and
+                plumbing, we have saved a lot of the money spent on tankers.
+                Water shortages are a thing of the past!
               </Typography>
               <br />
               <Typography
@@ -710,9 +766,10 @@ const Home = () => {
                   fontSize: "20px",
                   fontWeight: "600",
                   lineHeight: "1.5",
+                  marginLeft: "20px",
                 }}
               >
-                Shekhar
+                Rajesh
               </Typography>
 
               <Typography
@@ -723,9 +780,67 @@ const Home = () => {
                   textTransform: "uppercase",
                   lineHeight: "1.6em",
                   letterSpacing: "3px",
+                  marginLeft: "20px",
                 }}
               >
-                SAI LAKSHMI ARCADE KPHB, HYDERABAD
+                GAUTAMI ENCLAVE KONDAPUR, HYDERABAD
+              </Typography>
+            </Grid>
+
+            <Grid item md={3}>
+              <FontAwesomeIcon
+                style={{
+                  height: "3em",
+                  width: "3em",
+                  position: "relative",
+                  display: "inline-block",
+                  color: "#bfbfbf",
+                  paddingLeft: "20px",
+                }}
+                icon={faQuoteLeft}
+              />
+
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "16px",
+                  fontWeight: "300",
+                  lineHeight: "2em",
+                  marginLeft: "20px",
+                }}
+              >
+                We worked with Sai to incorporate Injection Wells at our 120
+                unit project - Eeco Valley, Chandanagar - because we were
+                dependent on depleting groundwater & water tankers for supply.
+                Now, Rainmax's Injection Wells have recharged our borewells
+                substantially, with rooftop rainwater. It was so effective that
+                many other apartments in our colony also followed suit.
+              </Typography>
+              <br />
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  lineHeight: "1.5",
+                  marginLeft: "20px",
+                }}
+              >
+                Niranjan
+              </Typography>
+
+              <Typography
+                style={{
+                  color: "#bfbfbf",
+                  fontSize: "15px",
+                  fontWeight: "300",
+                  textTransform: "uppercase",
+                  lineHeight: "1.6em",
+                  letterSpacing: "3px",
+                  marginLeft: "20px",
+                }}
+              >
+                SRIJA BUILDERS & DEVELOPERS MADHAVPURI HILLS, HYDERABAD
               </Typography>
             </Grid>
           </Grid>
