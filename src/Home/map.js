@@ -13,7 +13,7 @@ const MapWrapped = withScriptjs(
   withGoogleMap(() => {
     return (
       <GoogleMap
-        defaultZoom={5}
+        defaultZoom={11}
         defaultCenter={{ lat: 17.385044, lng: 78.486671 }}
         defaultOptions={{}}
       ></GoogleMap>

@@ -639,8 +639,8 @@ const Home = () => {
 
       <div style={{ height: "110vh", backgroundColor: "white" }}>
         <Grid container>
-          <Grid item md={2}></Grid>
-          <Grid item md={5}>
+          <Grid item md={1}></Grid>
+          <Grid style={{ position: "relative", left: "30px" }} item md={5}>
             <br /> <br /> <br />
             <Typography
               style={{
@@ -684,6 +684,7 @@ const Home = () => {
                 fontSize: "18px",
                 fontWeight: "200",
                 lineHeight: "1.5em",
+                paddingLeft: "20px",
               }}
             >
               Headquartered in Hyderabad.
@@ -694,6 +695,7 @@ const Home = () => {
                 fontSize: "18px",
                 fontWeight: "200",
                 lineHeight: "1.5em",
+                paddingLeft: "20px",
               }}
             >
               Available pan-India.
@@ -706,13 +708,14 @@ const Home = () => {
                 position: "relative",
                 display: "inline-block",
                 color: "#494949",
+                paddingLeft: "20px",
               }}
               icon={faMapMarker}
             />
             <Typography
               style={{
                 color: "#494949",
-                paddingLeft: "30px",
+                paddingLeft: "50px",
                 position: "relative",
                 bottom: "17px",
                 fontWeight: "300",
@@ -727,13 +730,14 @@ const Home = () => {
                 position: "relative",
                 display: "inline-block",
                 color: "#494949",
+                paddingLeft: "20px",
               }}
               icon={faEnvelope}
             />
             <Typography
               style={{
                 color: "#494949",
-                paddingLeft: "30px",
+                paddingLeft: "50px",
                 position: "relative",
                 bottom: "17px",
                 fontWeight: "300",
@@ -748,13 +752,14 @@ const Home = () => {
                 position: "relative",
                 display: "inline-block",
                 color: "#494949",
+                paddingLeft: "20px",
               }}
               icon={faPhone}
             />
             <Typography
               style={{
                 color: "#494949",
-                paddingLeft: "30px",
+                paddingLeft: "50px",
                 position: "relative",
                 bottom: "17px",
                 fontWeight: "300",
@@ -769,6 +774,7 @@ const Home = () => {
                 fontSize: "18px",
                 fontWeight: "200",
                 lineHeight: "1.5em",
+                paddingLeft: "20px",
               }}
             >
               Our Social Pages
@@ -789,6 +795,7 @@ const Home = () => {
                   alignItems: "center",
                   borderRadius: "10%",
                   backgroundColor: "white",
+                  paddingLeft: "20px",
                 }}
               >
                 <FontAwesomeIcon
@@ -826,6 +833,7 @@ const Home = () => {
                     position: "relative",
                     display: "inline-block",
                     color: "black",
+                    paddingLeft: "20px",
                   }}
                   icon={faInstagram}
                 />
@@ -855,6 +863,7 @@ const Home = () => {
                     position: "relative",
                     display: "inline-block",
                     color: "black",
+                    paddingLeft: "20px",
                   }}
                   icon={faLinkedin}
                 />
@@ -863,6 +872,9 @@ const Home = () => {
           </Grid>
 
           <Grid item md={5}>
+            <br />
+            <br />
+            <br />
             <Map lag={17.385044} long={78.486671} />
           </Grid>
         </Grid>
