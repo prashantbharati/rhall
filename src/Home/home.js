@@ -635,6 +635,47 @@ const Home = () => {
         </Grid>
       </div>
 
+      <div style={{ height: "150vh", backgroundColor: "white", width: "100%" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            height: "100%",
+            marginTop: "100px",
+            alignItems: "center",
+          }}
+        >
+          <Typography
+            style={{
+              color: "#262626",
+
+              fontSize: "18px",
+              fontWeight: "200",
+            }}
+          >
+            Testimonitals
+          </Typography>
+
+          <Typography
+            style={{
+              color: "#494949",
+              fontSize: "40px",
+              fontWeight: "200",
+              lineHeight: "1em",
+              bottom: "1px",
+              padding: "20px",
+              borderWidth: "0 0 1px",
+              borderBlockEnd: " ",
+              borderStyle: "solid",
+              marginTop: "50px",
+            }}
+          >
+            What customers say?
+          </Typography>
+        </div>
+      </div>
+
       {/* Map div begins */}
 
       <div style={{ height: "110vh", backgroundColor: "white" }}>
