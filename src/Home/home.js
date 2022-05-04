@@ -20,6 +20,7 @@ import {
   faEnvelope,
   faMapMarker,
   faPhone,
+  faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -656,7 +657,6 @@ const Home = () => {
           >
             Testimonitals
           </Typography>
-
           <Typography
             style={{
               color: "#494949",
@@ -673,6 +673,62 @@ const Home = () => {
           >
             What customers say?
           </Typography>
+          <br /> <br /> <br /> <br /> <br />
+          <Grid container>
+            <Grid item md={2}></Grid>
+
+            <Grid item md={2}>
+              <FontAwesomeIcon
+                style={{
+                  height: "3em",
+                  width: "3em",
+                  position: "relative",
+                  display: "inline-block",
+                  color: "#bfbfbf",
+                  paddingLeft: "20px",
+                }}
+                icon={faQuoteLeft}
+              />
+
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "16px",
+                  fontWeight: "300",
+                  lineHeight: "2em",
+                }}
+              >
+                We are a stand-alone apartment building of 25 flats, and depend
+                on water tankers year around. After implementing rooftop
+                rainwater harvesting, we saved around 75 tankers of water in the
+                monsoon, resulting in monetary savings of Rs. 60,000.
+              </Typography>
+              <br />
+              <Typography
+                style={{
+                  color: "#000000",
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  lineHeight: "1.5",
+                }}
+              >
+                Shekhar
+              </Typography>
+
+              <Typography
+                style={{
+                  color: "#bfbfbf",
+                  fontSize: "15px",
+                  fontWeight: "300",
+                  textTransform: "uppercase",
+                  lineHeight: "1.6em",
+                  letterSpacing: "3px",
+                }}
+              >
+                SAI LAKSHMI ARCADE KPHB, HYDERABAD
+              </Typography>
+            </Grid>
+          </Grid>
         </div>
       </div>
 
