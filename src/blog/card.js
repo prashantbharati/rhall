@@ -5,12 +5,13 @@ import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 const Cardcomponent = (props) => {
   const doit = (e) => {
     console.log(e.target.style);
-    e.target.style = "transition: transform .2s;transform:scale(1.5)";
+    e.target.style =
+      "transition: transform .5s ease-in-out;transform:scale(1.5);";
     console.log(e.target.style);
   };
 
   const doit2 = (e) => {
-    e.target.style = "transition: transform .2s;transform:scale(1)";
+    e.target.style = "transition: transform .5s;transform:scale(1)";
   };
 
   return (

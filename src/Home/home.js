@@ -30,12 +30,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import amazon from "../images/amazon.png";
+import { keyframes } from "styled-components";
 
 const Home = () => {
   const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
   const [oldScroll, setoldScroll] = useState(eopacity);
   console.log(eopacity);
+
+  let leftfirst = `${keyframes} 0% { transform:skewX(53deg) translateX(-50px); }
+  100% { transform: skewX(53deg) }`;
 
   return (
     // '${eopacity}'
@@ -198,12 +202,14 @@ const Home = () => {
           })
         }
 
+        {/*div 2 begins*/}
+
         <br />
         <br />
         <br />
         <div
           style={{
-            height: "30vh",
+            height: "50vh",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -225,8 +231,8 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
+                  animation: `${leftfirst} 1s ease-in`,
                 }}
-                className=" w3-animate-left"
               >
                 <div
                   style={{
@@ -286,7 +292,6 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                 }}
-                className="w3-animate-bottom"
               >
                 <div
                   style={{
@@ -349,8 +354,8 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
+                  animation: `${leftfirst} 1s ease-in`,
                 }}
-                className="w3-animate-right"
               >
                 <div
                   style={{
