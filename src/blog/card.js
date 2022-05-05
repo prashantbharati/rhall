@@ -3,25 +3,31 @@ import React from "react";
 import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 
 const Cardcomponent = (props) => {
+  const doit = (e) => {
+    console.log(e.target.style);
+    e.target.style = "transition: transform .2s;transform:scale(1.5)";
+    console.log(e.target.style);
+  };
+
+  const doit2 = (e) => {
+    e.target.style = "transition: transform .2s;transform:scale(1)";
+  };
+
   return (
-    <Card style={{ height: "600px", transition: "transform 1s" }}>
+    <Card
+      style={{
+        height: "600px",
+      }}
+    >
       <CardMedia
-        style={{ height: "400px", transition: "transform 1s" }}
+        style={{
+          height: "400px",
+        }}
         component="img"
         image={props.img}
         alt="green iguana"
-        onMouseOver={(e) =>
-          (e.currentTarget.style = {
-            transform: "scale(1.5)",
-            overflow: "hidden",
-          })
-        }
-        onMouseOut={(e) =>
-          (e.currentTarget.style = {
-            transform: "scale(1)",
-            overflow: "hidden",
-          })
-        }
+        onMouseOver={doit}
+        onMouseOut={doit2}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
