@@ -37,21 +37,21 @@ import { keyframes } from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   animatedItem: {
-    animation: `$myEffect 3000ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffect 1000ms ${theme.transitions.easing.easeInOut}`,
   },
   animatedItemExiting: {
-    animation: `$myEffectExit 3000ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffectExit 1000ms ${theme.transitions.easing.easeInOut}`,
     opacity: 0,
     transform: "translateY(-200%)",
   },
   "@keyframes myEffect": {
     "0%": {
       opacity: 0,
-      transform: "translateY(-200%)",
+      transform: "translateX(-200%)",
     },
     "100%": {
       opacity: 1,
-      transform: "translateY(0)",
+      transform: "translateX(0)",
     },
   },
   "@keyframes myEffectExit": {
@@ -68,30 +68,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const [eopacity, seteopacity] = useState(0.36);
-  const [oldScroll, setoldScroll] = useState(eopacity);
+
   console.log(eopacity);
 
   const classes = useStyles();
   const [exit, setExit] = React.useState(false);
-
-  let leftfirst = `${keyframes} 
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(100%);
-  } 
-  `;
-
-  // let leftfirst = keyframes`0%{
-  //         transfrom:translateX(-50px);
-  // }
-
-  // 100%{
-  //   transform:translateX(0px);
-  // }
-  // `;
 
   return (
     // '${eopacity}'
@@ -283,21 +264,19 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-
-                  animation: `"@keyframes myEffect: {
-    0%: {
-      opacity: 0,
-      transform: "translateY(-200%)"
-    },
-    100%: {
-      opacity: 1,
-      transform: "translateY(0)"
-    }
-  }"`,
+                  transform: `${
+                    document.documentElement.scrollTop >= 500
+                      ? "translateX(0%)"
+                      : "translateX(-200%)"
+                  }`,
                 }}
-                className={clsx(classes.animatedItem, {
-                  [classes.animatedItemExiting]: exit,
-                })}
+                className={
+                  document.documentElement.scrollTop >= 500
+                    ? clsx(classes.animatedItem, {
+                        [classes.animatedItemExiting]: exit,
+                      })
+                    : ""
+                }
               >
                 <div
                   style={{
@@ -546,7 +525,7 @@ const Home = () => {
                   display: "block",
                   color: "#5b360d",
                 }}
-                icon={faPercent}
+                icon={faPercentage}
               />
               <Typography>SUCCESS RATE</Typography>
             </div>
