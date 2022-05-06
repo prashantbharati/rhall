@@ -41,8 +41,6 @@ const useStyles = makeStyles((theme) => ({
   },
   animatedItemExiting: {
     animation: `$myEffectExit 1000ms ${theme.transitions.easing.easeInOut}`,
-    opacity: 0,
-    transform: "translateY(-200%)",
   },
   "@keyframes myEffect": {
     "0%": {
@@ -56,12 +54,12 @@ const useStyles = makeStyles((theme) => ({
   },
   "@keyframes myEffectExit": {
     "0%": {
-      opacity: 1,
-      transform: "translateY(0)",
+      opacity: 0,
+      transform: "translateY(200%)",
     },
     "100%": {
-      opacity: 0,
-      transform: "translateY(-200%)",
+      opacity: 1,
+      transform: "translateY(0)",
     },
   },
 }));
@@ -272,9 +270,7 @@ const Home = () => {
                 }}
                 className={
                   document.documentElement.scrollTop >= 500
-                    ? clsx(classes.animatedItem, {
-                        [classes.animatedItemExiting]: exit,
-                      })
+                    ? classes.animatedItem
                     : ""
                 }
               >
@@ -336,6 +332,11 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                 }}
+                className={
+                  document.documentElement.scrollTop >= 500
+                    ? classes.animatedItemExiting
+                    : ""
+                }
               >
                 <div
                   style={{
