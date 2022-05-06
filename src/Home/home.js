@@ -5,9 +5,12 @@ import frontfilter1 from "../images/frontfilter1.jpg";
 import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
-import useStyles from "./styles.js";
+import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Map from "./map.js";
+
+import { makeStyles } from "@material-ui/core/styles";
+
 import {
   faDroplet,
   faHouseFloodWater,
@@ -32,14 +35,63 @@ import {
 import amazon from "../images/amazon.png";
 import { keyframes } from "styled-components";
 
+const useStyles = makeStyles((theme) => ({
+  animatedItem: {
+    animation: `$myEffect 3000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  animatedItemExiting: {
+    animation: `$myEffectExit 3000ms ${theme.transitions.easing.easeInOut}`,
+    opacity: 0,
+    transform: "translateY(-200%)",
+  },
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(-200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+  "@keyframes myEffectExit": {
+    "0%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+    "100%": {
+      opacity: 0,
+      transform: "translateY(-200%)",
+    },
+  },
+}));
+
 const Home = () => {
-  const classes = useStyles();
   const [eopacity, seteopacity] = useState(0.36);
   const [oldScroll, setoldScroll] = useState(eopacity);
   console.log(eopacity);
 
-  let leftfirst = `${keyframes} 0% { transform:skewX(53deg) translateX(-50px); }
-  100% { transform: skewX(53deg) }`;
+  const classes = useStyles();
+  const [exit, setExit] = React.useState(false);
+
+  let leftfirst = `${keyframes} 
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  } 
+  `;
+
+  // let leftfirst = keyframes`0%{
+  //         transfrom:translateX(-50px);
+  // }
+
+  // 100%{
+  //   transform:translateX(0px);
+  // }
+  // `;
 
   return (
     // '${eopacity}'
@@ -231,8 +283,21 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  animation: `${leftfirst} 1s ease-in`,
+
+                  animation: `"@keyframes myEffect: {
+    0%: {
+      opacity: 0,
+      transform: "translateY(-200%)"
+    },
+    100%: {
+      opacity: 1,
+      transform: "translateY(0)"
+    }
+  }"`,
                 }}
+                className={clsx(classes.animatedItem, {
+                  [classes.animatedItemExiting]: exit,
+                })}
               >
                 <div
                   style={{
@@ -354,7 +419,7 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  animation: `${leftfirst} 1s ease-in`,
+                  // animation: `${leftfirst} 1s ease-in`,
                 }}
               >
                 <div
