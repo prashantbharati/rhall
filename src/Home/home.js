@@ -17,7 +17,6 @@ import {
   faIndianRupeeSign,
   faMillSign,
   faMoneyBill,
-  faPercent,
   faPercentage,
   faPlus,
   faEnvelope,
@@ -42,6 +41,10 @@ const useStyles = makeStyles((theme) => ({
   animatedItemExiting: {
     animation: `$myEffectExit 1000ms ${theme.transitions.easing.easeInOut}`,
   },
+  animatedItemExitingRight: {
+    animation: `$myEffectExitright 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+
   "@keyframes myEffect": {
     "0%": {
       opacity: 0,
@@ -56,6 +59,17 @@ const useStyles = makeStyles((theme) => ({
     "0%": {
       opacity: 0,
       transform: "translateY(200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+
+  "@keyframes myEffectExitright": {
+    "0%": {
+      opacity: 0,
+      transform: "translateX(200%)",
     },
     "100%": {
       opacity: 1,
@@ -331,6 +345,11 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
+                  transform: `${
+                    document.documentElement.scrollTop >= 500
+                      ? "translateY(0%)"
+                      : "translateY(200%)"
+                  }`,
                 }}
                 className={
                   document.documentElement.scrollTop >= 500
@@ -400,7 +419,17 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                   // animation: `${leftfirst} 1s ease-in`,
+                  transform: `${
+                    document.documentElement.scrollTop >= 500
+                      ? "translateX(0%)"
+                      : "translateX(200%)"
+                  }`,
                 }}
+                className={
+                  document.documentElement.scrollTop >= 500
+                    ? classes.animatedItemExitingRight
+                    : ""
+                }
               >
                 <div
                   style={{
