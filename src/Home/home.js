@@ -661,7 +661,6 @@ const Home = () => {
               >
                 Rainmax Filter
               </Typography>
-
               <Typography
                 style={{
                   fontSize: "18px",
@@ -676,6 +675,31 @@ const Home = () => {
                 other debris. Depending on your roof area and requirements,
                 there are 4 variants of this filter.
               </Typography>
+              <br /> <br />
+              <Button
+                variant="outlined"
+                align="right"
+                style={{
+                  width: "35%",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                  textTransform: "uppercase",
+                  lineHeight: "1em",
+                  letterSpacing: "1.5px",
+                  textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
+                  fill: "#000000",
+                  color: "#000000",
+                  backgroundColor: "rgba(64,84,178,0)",
+                  borderStyle: "solid",
+                  borderWidth: "2px 2px 2px 2px",
+                  borderColor: "#1e1e1e",
+                  borderRadius: "5px 5px 5px 5px",
+                  boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
+                  padding: "15px 35px 15px 35px",
+                }}
+              >
+                More Info
+              </Button>
             </div>
           </Grid>
 
@@ -739,6 +763,32 @@ const Home = () => {
                 cost-effective solution for you. It ensures constant supply of
                 groundwater without having to depend on water tankers.
               </Typography>
+              <br />
+              <br />
+              <Button
+                variant="outlined"
+                align="right"
+                style={{
+                  width: "35%",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                  textTransform: "uppercase",
+                  lineHeight: "1em",
+                  letterSpacing: "1.5px",
+                  textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
+                  fill: "#000000",
+                  color: "#000000",
+                  backgroundColor: "rgba(64,84,178,0)",
+                  borderStyle: "solid",
+                  borderWidth: "2px 2px 2px 2px",
+                  borderColor: "#1e1e1e",
+                  borderRadius: "5px 5px 5px 5px",
+                  boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
+                  padding: "15px 35px 15px 35px",
+                }}
+              >
+                More Info
+              </Button>
             </div>
           </Grid>
         </Grid>
