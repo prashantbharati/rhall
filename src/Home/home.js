@@ -696,7 +696,18 @@ const Home = () => {
                   borderRadius: "5px 5px 5px 5px",
                   boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
                   padding: "15px 35px 15px 35px",
+
+                  transform: `${
+                    document.documentElement.scrollTop >= 1900
+                      ? "translateX(0%)"
+                      : "translateX(-200%)"
+                  }`,
                 }}
+                className={
+                  document.documentElement.scrollTop >= 1900
+                    ? classes.animatedItem
+                    : ""
+                }
               >
                 More Info
               </Button>
@@ -785,7 +796,17 @@ const Home = () => {
                   borderRadius: "5px 5px 5px 5px",
                   boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
                   padding: "15px 35px 15px 35px",
+                  transform: `${
+                    document.documentElement.scrollTop >= 2700
+                      ? "translateX(0%)"
+                      : "translateX(350%)"
+                  }`,
                 }}
+                className={
+                  document.documentElement.scrollTop >= 2700
+                    ? classes.animatedItemExitingRight
+                    : ""
+                }
               >
                 More Info
               </Button>
