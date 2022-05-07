@@ -32,18 +32,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import amazon from "../images/amazon.png";
+import { keyframes } from "styled-components";
+
 const useStyles = makeStyles((theme) => ({
   animatedItem: {
-    animation: `$myEffect 1500ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffect 1000ms ${theme.transitions.easing.easeInOut}`,
   },
   animatedItemExiting: {
-    animation: `$myEffectExit 1500ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffectExit 1000ms ${theme.transitions.easing.easeInOut}`,
   },
   animatedItemExitingRight: {
-    animation: `$myEffectExitright 1500ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffectExitright 1000ms ${theme.transitions.easing.easeInOut}`,
   },
   animatedItem3: {
-    animation: `$myEffectExit3 1500ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$myEffectExit3 1000ms ${theme.transitions.easing.easeInOut}`,
   },
 
   "@keyframes myEffect": {
@@ -125,9 +127,9 @@ const Home = () => {
           }}
         >
           <Grid container>
-            <Grid item xs={1} sm={1} md={1}></Grid>
+            <Grid item sm={0} md={1}></Grid>
 
-            <Grid item xs={11} sm={11} md={6}>
+            <Grid item sm={12} md={6}>
               <div
                 style={{
                   display: "flex",
@@ -142,7 +144,7 @@ const Home = () => {
                   style={{
                     color: "white",
 
-                    fontSize: `${window.innerWidth >= 768 ? "170px" : "70px"}`,
+                    fontSize: "170px",
                     fontWeight: 200,
                   }}
                 >
@@ -152,7 +154,7 @@ const Home = () => {
                   style={{
                     color: "white",
                     fontWeight: "bold",
-                    fontSize: `${window.innerWidth >= 768 ? "170px" : "70px"}`,
+                    fontSize: "170px",
                     lineHeight: "0.5",
                   }}
                 >
@@ -162,7 +164,7 @@ const Home = () => {
                   style={{
                     color: "white",
                     fontWeight: "bold",
-                    fontSize: `${window.innerWidth >= 768 ? "170px" : "70px"}`,
+                    fontSize: "170px",
                   }}
                 >
                   wise.
@@ -177,9 +179,9 @@ const Home = () => {
               </div>
             </Grid>
 
-            <Grid item xs={1} sm={1} md={1}></Grid>
+            <Grid item md={1}></Grid>
 
-            <Grid item xs={10} sm={10} md={3}>
+            <Grid item sm={12} md={3}>
               <div>
                 <div style={{ height: "50%", boxShadow: "0px 0px 5px #fff" }}>
                   <Cacomponent />
@@ -233,7 +235,6 @@ const Home = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={1} sm={1} md={1}></Grid>
           </Grid>
         </div>
 
@@ -560,7 +561,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1000
+                document.documentElement.scrollTop >= 1500
                   ? classes.animatedItem3
                   : ""
               }
@@ -588,7 +589,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1000
+                document.documentElement.scrollTop >= 1500
                   ? classes.animatedItem3
                   : ""
               }
@@ -616,7 +617,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1000
+                document.documentElement.scrollTop >= 1500
                   ? classes.animatedItemExiting
                   : ""
               }
@@ -714,15 +715,14 @@ const Home = () => {
           </Grid>
 
           <Grid
-            item
-            sm={12}
-            md={12}
-            lg={6}
             style={{
               backgroundImage: `url('${frontfilter1}')`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              width: "100%",
             }}
+            item
+            sm={12}
+            md={6}
           ></Grid>
         </Grid>
       </div>
@@ -1054,7 +1054,6 @@ const Home = () => {
               src={amazon}
               style={{
                 height: "50px",
-
                 transform: `${
                   document.documentElement.scrollTop >= 4100
                     ? "translateY(0%)"
@@ -1279,7 +1278,7 @@ const Home = () => {
             </div>
           </Grid>
 
-          <Grid item sm={12} md={5}>
+          <Grid item md={5}>
             <br />
             <br />
             <br />

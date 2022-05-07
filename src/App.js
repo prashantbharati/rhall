@@ -10,7 +10,7 @@ import Footer from "./footer.js";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Nav /> */}
+      <Nav />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/filter" exact element={<Filter />} />
