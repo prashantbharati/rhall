@@ -436,7 +436,7 @@ const Home = () => {
                   transform: `${
                     document.documentElement.scrollTop >= 500
                       ? "translateX(0%)"
-                      : "translateX(200%)"
+                      : ""
                   }`,
                 }}
                 className={
