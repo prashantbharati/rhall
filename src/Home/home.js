@@ -44,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
   animatedItemExitingRight: {
     animation: `$myEffectExitright 1000ms ${theme.transitions.easing.easeInOut}`,
   },
+  animatedItem3: {
+    animation: `$myEffectExit3 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
 
   "@keyframes myEffect": {
     "0%": {
@@ -70,6 +73,17 @@ const useStyles = makeStyles((theme) => ({
     "0%": {
       opacity: 0,
       transform: "translateX(200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+
+  "@keyframes myEffectExit3": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(-200%)",
     },
     "100%": {
       opacity: 1,
@@ -546,6 +560,11 @@ const Home = () => {
                 justifyContent: "center",
                 alignItems: "center",
               }}
+              className={
+                document.documentElement.scrollTop >= 900
+                  ? classes.animatedItem3
+                  : ""
+              }
             >
               <FontAwesomeIcon
                 style={{
@@ -569,6 +588,11 @@ const Home = () => {
                 justifyContent: "center",
                 alignItems: "center",
               }}
+              className={
+                document.documentElement.scrollTop >= 900
+                  ? classes.animatedItem3
+                  : ""
+              }
             >
               <FontAwesomeIcon
                 style={{
