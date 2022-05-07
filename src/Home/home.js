@@ -616,6 +616,11 @@ const Home = () => {
                 justifyContent: "center",
                 alignItems: "center",
               }}
+              className={
+                document.documentElement.scrollTop >= 900
+                  ? classes.animatedItemExiting
+                  : ""
+              }
             >
               <FontAwesomeIcon
                 style={{
