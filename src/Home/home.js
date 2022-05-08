@@ -852,7 +852,13 @@ const Home = () => {
         </Grid>
       </div>
 
-      <div style={{ height: "150vh", backgroundColor: "white", width: "100%" }}>
+      <div
+        style={{
+          height: `${matches2 ? "280vh" : "150vh"}`,
+          backgroundColor: "white",
+          width: "100%",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -1068,10 +1074,17 @@ const Home = () => {
 
       {/* Map div begins */}
 
-      <div style={{ height: "110vh", backgroundColor: "white" }}>
+      <div
+        style={{
+          height: `${matches2 ? "230vh" : "110vh"}`,
+          backgroundColor: "white",
+        }}
+      >
         <Grid container>
-          <Grid item md={1}></Grid>
-          <Grid style={{ position: "relative", left: "30px" }} item md={5}>
+          {!matches2 ? <Grid item md={1}></Grid> : ""}
+
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          <Grid item xs={10} md={5}>
             <br /> <br /> <br />
             <Typography
               style={{
@@ -1318,12 +1331,15 @@ const Home = () => {
             </div>
           </Grid>
 
-          <Grid item md={5}>
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          <Grid item xs={10} md={5}>
             <br />
             <br />
             <br />
             <Map lag={17.385044} long={78.486671} />
           </Grid>
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
         </Grid>
       </div>
     </>
