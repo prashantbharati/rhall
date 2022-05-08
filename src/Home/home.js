@@ -548,11 +548,12 @@ const Home = () => {
           style={{
             fontSize: "40px",
             fontWeight: "200",
-            lineHeight: "2.5",
+            lineHeight: "1em",
           }}
         >
           Why harvest rainwater?
         </Typography>
+        <br />
         <div style={{ maxWidth: "800px" }}>
           <Typography
             style={{
@@ -576,7 +577,9 @@ const Home = () => {
         <br />
 
         <Grid container>
-          <Grid item md={4} sm={12}>
+          <Grid item md={4} xs={12}>
+            {matches2 ? <br /> : ""}
+            {matches2 ? <br /> : ""}
             <div
               style={{
                 display: "flex",
@@ -604,7 +607,9 @@ const Home = () => {
             </div>
           </Grid>
 
-          <Grid item md={4} sm={12}>
+          <Grid item md={4} xs={12}>
+            {matches2 ? <br /> : ""}
+            {matches2 ? <br /> : ""}
             <div
               style={{
                 display: "flex",
@@ -632,7 +637,9 @@ const Home = () => {
             </div>
           </Grid>
 
-          <Grid item md={4} sm={12}>
+          <Grid item md={4} xs={12}>
+            {matches2 ? <br /> : ""}
+            {matches2 ? <br /> : ""}
             <div
               style={{
                 display: "flex",
@@ -664,8 +671,8 @@ const Home = () => {
 
       <div style={{ marginLeft: "40px" }}>
         <Grid container>
-          {/* <Grid item sm={0} md={1}></Grid> */}
-          <Grid item sm={12} md={6}>
+          {/* <Grid item xs={0} md={1}></Grid> */}
+          <Grid item xs={12} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -745,7 +752,7 @@ const Home = () => {
               width: "100%",
             }}
             item
-            sm={12}
+            xs={12}
             md={6}
           ></Grid>
         </Grid>
@@ -753,7 +760,7 @@ const Home = () => {
 
       <div style={{ marginRight: "40px" }}>
         <Grid container>
-          {/* <Grid item sm={0} md={1}></Grid> */}
+          {/* <Grid item xs={0} md={1}></Grid> */}
 
           <Grid
             style={{
@@ -761,11 +768,11 @@ const Home = () => {
               backgroundSize: "cover",
             }}
             item
-            sm={12}
+            xs={12}
             md={6}
           ></Grid>
 
-          <Grid item sm={12} md={6}>
+          <Grid item xs={12} md={6}>
             <div
               style={{
                 height: "130vh",
