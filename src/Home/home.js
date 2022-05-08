@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Typography, Button, Grid } from "@material-ui/core";
-import Nav from "../Nav/Nav.js";
+
 import frontfilter1 from "../images/frontfilter1.jpg";
 import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
 import Cacomponent from "./carousel";
-import clsx from "clsx";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Map from "./map.js";
 
@@ -15,7 +15,6 @@ import {
   faDroplet,
   faHouseFloodWater,
   faIndianRupeeSign,
-  faMillSign,
   faMoneyBill,
   faPercentage,
   faPlus,
@@ -32,7 +31,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import amazon from "../images/amazon.png";
-import { keyframes } from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   animatedItem: {
@@ -98,10 +96,17 @@ const Home = () => {
   console.log(eopacity);
 
   const classes = useStyles();
-  const [exit, setExit] = React.useState(false);
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 600px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 600px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
 
   return (
-    // '${eopacity}'
     <>
       <div
         id="topdiv"
@@ -127,9 +132,9 @@ const Home = () => {
           }}
         >
           <Grid container>
-            <Grid item sm={0} md={1}></Grid>
+            <Grid item xs={1} md={1}></Grid>
 
-            <Grid item sm={12} md={6}>
+            <Grid item xs={11} md={6}>
               <div
                 style={{
                   display: "flex",
@@ -144,7 +149,8 @@ const Home = () => {
                   style={{
                     color: "white",
 
-                    fontSize: "170px",
+                    fontSize: `${matches ? "100px" : "170px"}`,
+
                     fontWeight: 200,
                   }}
                 >
@@ -154,7 +160,7 @@ const Home = () => {
                   style={{
                     color: "white",
                     fontWeight: "bold",
-                    fontSize: "170px",
+                    fontSize: `${matches ? "100px" : "170px"}`,
                     lineHeight: "0.5",
                   }}
                 >
@@ -164,7 +170,7 @@ const Home = () => {
                   style={{
                     color: "white",
                     fontWeight: "bold",
-                    fontSize: "170px",
+                    fontSize: `${matches ? "100px" : "170px"}`,
                   }}
                 >
                   wise.
@@ -176,12 +182,13 @@ const Home = () => {
                 >
                   See More
                 </Button>
+                <br />
               </div>
             </Grid>
 
-            <Grid item md={1}></Grid>
+            <Grid item xs={1} md={1}></Grid>
 
-            <Grid item sm={12} md={3}>
+            <Grid item xs={10} md={3}>
               <div>
                 <div style={{ height: "50%", boxShadow: "0px 0px 5px #fff" }}>
                   <Cacomponent />
@@ -235,6 +242,7 @@ const Home = () => {
                 </div>
               </div>
             </Grid>
+            <Grid item xs={1} md={1}></Grid>
           </Grid>
         </div>
 
@@ -268,7 +276,7 @@ const Home = () => {
         <br />
         <div
           style={{
-            height: `${window.innerWidth >= 912 ? "70vh" : "140vh"}`,
+            height: `${window.innerWidth >= 912 ? "70vh" : "100vh"}`,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
