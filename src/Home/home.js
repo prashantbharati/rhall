@@ -712,41 +712,50 @@ const Home = () => {
                 there are 4 variants of this filter.
               </Typography>
               <br /> <br />
-              <Button
-                variant="outlined"
-                align="right"
+              <div
                 style={{
-                  width: "35%",
-                  fontSize: "16px",
-                  fontWeight: "600",
-                  textTransform: "uppercase",
-                  lineHeight: "1em",
-                  letterSpacing: "1.5px",
-                  textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
-                  fill: "#000000",
-                  color: "#000000",
-                  backgroundColor: "rgba(64,84,178,0)",
-                  borderStyle: "solid",
-                  borderWidth: "2px 2px 2px 2px",
-                  borderColor: "#1e1e1e",
-                  borderRadius: "5px 5px 5px 5px",
-                  boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
-                  padding: "15px 35px 15px 35px",
+                  display: "flex",
+                  flexDirection: "column",
 
-                  transform: `${
-                    document.documentElement.scrollTop >= 1900
-                      ? "translateX(0%)"
-                      : "translateX(-200%)"
-                  }`,
+                  alignItems: `${!matches2 ? "" : "center"}`,
                 }}
-                className={
-                  document.documentElement.scrollTop >= 1900
-                    ? classes.animatedItem
-                    : ""
-                }
               >
-                More Info
-              </Button>
+                <Button
+                  variant="outlined"
+                  align="right"
+                  style={{
+                    width: "35%",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    textTransform: "uppercase",
+                    lineHeight: "1em",
+                    letterSpacing: "1.5px",
+                    textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
+                    fill: "#000000",
+                    color: "#000000",
+                    backgroundColor: "rgba(64,84,178,0)",
+                    borderStyle: "solid",
+                    borderWidth: "2px 2px 2px 2px",
+                    borderColor: "#1e1e1e",
+                    borderRadius: "5px 5px 5px 5px",
+                    boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
+                    padding: "15px 35px 15px 35px",
+
+                    transform: `${
+                      document.documentElement.scrollTop >= 1900
+                        ? "translateX(0%)"
+                        : "translateX(-200%)"
+                    }`,
+                  }}
+                  className={
+                    document.documentElement.scrollTop >= 1900
+                      ? classes.animatedItem
+                      : ""
+                  }
+                >
+                  More Info
+                </Button>
+              </div>
             </div>
           </Grid>
 
@@ -813,40 +822,50 @@ const Home = () => {
               </Typography>
               <br />
               <br />
-              <Button
-                variant="outlined"
-                align="right"
+              <div
                 style={{
-                  width: "35%",
-                  fontSize: "16px",
-                  fontWeight: "600",
-                  textTransform: "uppercase",
-                  lineHeight: "1em",
-                  letterSpacing: "1.5px",
-                  textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
-                  fill: "#000000",
-                  color: "#000000",
-                  backgroundColor: "rgba(64,84,178,0)",
-                  borderStyle: "solid",
-                  borderWidth: "2px 2px 2px 2px",
-                  borderColor: "#1e1e1e",
-                  borderRadius: "5px 5px 5px 5px",
-                  boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
-                  padding: "15px 35px 15px 35px",
-                  transform: `${
-                    document.documentElement.scrollTop >= 2700
-                      ? "translateX(0%)"
-                      : "translateX(350%)"
-                  }`,
+                  display: "flex",
+                  flexDirection: "column",
+
+                  alignItems: `${!matches2 ? "" : "center"}`,
                 }}
-                className={
-                  document.documentElement.scrollTop >= 2700
-                    ? classes.animatedItemExitingRight
-                    : ""
-                }
               >
-                More Info
-              </Button>
+                <Button
+                  variant="outlined"
+                  align="right"
+                  style={{
+                    width: "35%",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    textTransform: "uppercase",
+                    lineHeight: "1em",
+                    letterSpacing: "1.5px",
+                    textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
+                    fill: "#000000",
+                    color: "#000000",
+                    backgroundColor: "rgba(64,84,178,0)",
+                    borderStyle: "solid",
+                    borderWidth: "2px 2px 2px 2px",
+                    borderColor: "#1e1e1e",
+                    borderRadius: "5px 5px 5px 5px",
+                    boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
+                    padding: "15px 35px 15px 35px",
+
+                    transform: `${
+                      document.documentElement.scrollTop >= 1900
+                        ? "translateX(0%)"
+                        : "translateX(-200%)"
+                    }`,
+                  }}
+                  className={
+                    document.documentElement.scrollTop >= 1900
+                      ? classes.animatedItem
+                      : ""
+                  }
+                >
+                  More Info
+                </Button>
+              </div>
             </div>
           </Grid>
         </Grid>
@@ -879,22 +898,33 @@ const Home = () => {
           >
             Testimonitals
           </Typography>
-          <Typography
+          <div
             style={{
-              color: "#494949",
-              fontSize: "40px",
-              fontWeight: "200",
-              lineHeight: "1em",
-              bottom: "1px",
-              padding: "20px",
-              borderWidth: "0 0 1px",
-              borderBlockEnd: " ",
-              borderStyle: "solid",
-              marginTop: "50px",
+              display: "flex",
+              flexDirection: "column",
+              width: "100%",
+              alignItems: "center",
+
+              textAlign: "center",
             }}
           >
-            What customers say?
-          </Typography>
+            <Typography
+              style={{
+                color: "#494949",
+                fontSize: "40px",
+                fontWeight: "200",
+                lineHeight: "1em",
+                bottom: "1px",
+                padding: "20px",
+                borderWidth: "0 0 1px",
+                borderBlockEnd: " ",
+                borderStyle: "solid",
+                marginTop: "50px",
+              }}
+            >
+              What customers say?
+            </Typography>
+          </div>
           <br /> <br /> <br /> <br /> <br />
           <Grid container spacing={3}>
             <Grid item xs={1} md={2}></Grid>
