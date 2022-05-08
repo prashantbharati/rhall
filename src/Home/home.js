@@ -107,12 +107,12 @@ const Home = () => {
   }, []);
 
   const [matches2, setMatches2] = useState(
-    window.matchMedia("(max-width: 900px)").matches
+    window.matchMedia("(max-width: 960px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(max-width: 900px)")
+      .matchMedia("(max-width: 960px)")
       .addEventListener("change", (e) => setMatches2(e.matches));
   }, []);
 
@@ -544,6 +544,11 @@ const Home = () => {
 
         <br />
         <br />
+        {matches2 ? <br /> : ""}
+        {matches2 ? <br /> : ""}
+        {matches2 ? <br /> : ""}
+        {matches2 ? <br /> : ""}
+        {matches2 ? <br /> : ""}
         <Typography
           style={{
             fontSize: "40px",
@@ -749,7 +754,8 @@ const Home = () => {
             style={{
               backgroundImage: `url('${frontfilter1}')`,
               backgroundSize: "cover",
-              width: "100%",
+              backgroundPosition: "center center",
+              backgroundAttachment: "fixed",
             }}
             item
             xs={12}
@@ -885,9 +891,8 @@ const Home = () => {
           </Typography>
           <br /> <br /> <br /> <br /> <br />
           <Grid container spacing={3}>
-            <Grid item md={2}></Grid>
-
-            <Grid item md={3}>
+            <Grid item xs={1} md={2}></Grid>
+            <Grid item xs={10} md={3}>
               <FontAwesomeIcon
                 style={{
                   height: "3em",
@@ -941,8 +946,10 @@ const Home = () => {
                 SAI LAKSHMI ARCADE KPHB, HYDERABAD
               </Typography>
             </Grid>
-
-            <Grid item md={2}>
+            {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+            {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+            <Grid item xs={10} md={2}>
+              {matches2 ? <br /> : ""}
               <FontAwesomeIcon
                 style={{
                   height: "3em",
@@ -996,8 +1003,10 @@ const Home = () => {
                 GAUTAMI ENCLAVE KONDAPUR, HYDERABAD
               </Typography>
             </Grid>
-
-            <Grid item md={3}>
+            {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+            {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+            <Grid item xs={10} md={3}>
+              {matches2 ? <br /> : ""}
               <FontAwesomeIcon
                 style={{
                   height: "3em",
