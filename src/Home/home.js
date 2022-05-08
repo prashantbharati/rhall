@@ -106,6 +106,16 @@ const Home = () => {
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
+  const [matches2, setMatches2] = useState(
+    window.matchMedia("(max-width: 900px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 900px)")
+      .addEventListener("change", (e) => setMatches2(e.matches));
+  }, []);
+
   return (
     <>
       <div
@@ -276,7 +286,7 @@ const Home = () => {
         <br />
         <div
           style={{
-            height: `${window.innerWidth >= 912 ? "70vh" : "100vh"}`,
+            height: `${matches2 ? "130vh" : "70vh"}`,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -285,12 +295,14 @@ const Home = () => {
           }}
         >
           <Grid container>
-            <Grid item md={4}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+            <Grid item xs={12} md={4}>
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {matches2 ? <br /> : ""}
+              {matches2 ? <br /> : ""}
               <div
                 style={{
                   display: "flex",
@@ -359,7 +371,9 @@ const Home = () => {
               </div>
             </Grid>
 
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
+              {matches2 ? <br /> : ""}
+              {matches2 ? <br /> : ""}
               <div
                 style={{
                   display: "flex",
@@ -427,12 +441,14 @@ const Home = () => {
               </div>
             </Grid>
 
-            <Grid item md={4}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+            <Grid item xs={12} md={4}>
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {!matches2 ? <br /> : ""}
+              {matches2 ? <br /> : ""}
+              {matches2 ? <br /> : ""}
               <div
                 style={{
                   display: "flex",
