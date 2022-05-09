@@ -1,33 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import filterpage from "../images/filterpage.jpg";
 import frontfilter1 from "../images/frontfilter1.jpg";
 import filterpic1 from "../images/filterpic1.jpg";
 import filterpic2 from "../images/filterpic2.jpg";
 import { Typography, Button, Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  animatedItem: {
+    animation: `$myEffect 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "translateX(-200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateX(0)",
+    },
+  },
+}));
+
 const Filter = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 450px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 450px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
+  const [matches2, setMatches2] = useState(
+    window.matchMedia("(max-width: 960px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 960px)")
+      .addEventListener("change", (e) => setMatches2(e.matches));
+  }, []);
+
+  const classes = useStyles();
+
   return (
     <>
       <div
         style={{
-          height: "80vh",
+          height: "90vh",
+          width: "100%",
           backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.33) 0%, #A1A1A1 100%),url('${filterpage}')`,
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
+          transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
         }}
       >
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-        <br />
-        <Typography
-          style={{
-            color: "#FFFFFF",
-            fontFamily: "Poppins",
-            fontSize: "90px",
-            fontWeight: "500",
-          }}
-          // variant="h1"
-        >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rainmax Filters
-        </Typography>
+        <div style={{ padding: "250px 0 250px  8%" }}>
+          <Typography
+            style={{
+              color: "#FFFFFF",
+              fontFamily: "Poppins",
+              fontSize: `${matches ? "70px" : "90px"}`,
+              fontWeight: "500",
+            }}
+            // variant="h1"
+          >
+            Rainmax Filters
+          </Typography>
+        </div>
       </div>
 
       <div style={{ marginRight: "40px" }}>
@@ -50,6 +93,7 @@ const Filter = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 marginLeft: "40px",
+
                 // alignItems: "center",
               }}
             >
@@ -78,30 +122,62 @@ const Filter = () => {
                 there are 4 variants of this filter.
               </Typography>
               <br /> <br /> <br />
-              <Button
-                variant="outlined"
-                align="right"
+              {
+                (window.onscroll = () => {
+                  var scrollTop = document.documentElement.scrollTop;
+
+                  var opacity = 0.36;
+
+                  console.log(scrollTop);
+                  if (opacity >= 0) {
+                    /* header.style.opacity = opacity; */
+                  }
+                })
+              }
+              <div
                 style={{
-                  width: "50%",
-                  fontSize: "16px",
-                  fontWeight: "600",
-                  textTransform: "uppercase",
-                  lineHeight: "1em",
-                  letterSpacing: "1.5px",
-                  textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
-                  fill: "#000000",
-                  color: "#000000",
-                  backgroundColor: "rgba(64,84,178,0)",
-                  borderStyle: "solid",
-                  borderWidth: "2px 2px 2px 2px",
-                  borderColor: "#1e1e1e",
-                  borderRadius: "5px 5px 5px 5px",
-                  boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
-                  padding: "15px 35px 15px 35px",
+                  display: "flex",
+                  flexDirection: "column",
+
+                  alignItems: `${!matches2 ? "" : "center"}`,
                 }}
               >
-                Download Broucher
-              </Button>
+                <Button
+                  variant="outlined"
+                  align="right"
+                  style={{
+                    width: "330px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    textTransform: "uppercase",
+                    lineHeight: "1em",
+                    letterSpacing: "1.5px",
+                    textShadow: "0px 0px 0px rgb(0 0 0 / 30%)",
+                    fill: "#000000",
+                    color: "#000000",
+                    backgroundColor: "rgba(64,84,178,0)",
+                    borderStyle: "solid",
+                    borderWidth: "2px 2px 2px 2px",
+                    borderColor: "#1e1e1e",
+                    borderRadius: "5px 5px 5px 5px",
+                    boxShadow: "0px 0px 15px 0px rgb(0 0 0 / 11%)",
+                    padding: "15px 35px 15px 35px",
+
+                    transform: `${
+                      document.documentElement.scrollTop >= 600
+                        ? "translateX(0%)"
+                        : ""
+                    }`,
+                  }}
+                  className={
+                    document.documentElement.scrollTop >= 600
+                      ? classes.animatedItem
+                      : ""
+                  }
+                >
+                  Download Broucher
+                </Button>
+              </div>
             </div>
           </Grid>
         </Grid>

@@ -724,7 +724,7 @@ const Home = () => {
                   variant="outlined"
                   align="right"
                   style={{
-                    width: "35%",
+                    width: "200px",
                     fontSize: "16px",
                     fontWeight: "600",
                     textTransform: "uppercase",
@@ -834,7 +834,7 @@ const Home = () => {
                   variant="outlined"
                   align="right"
                   style={{
-                    width: "35%",
+                    width: "200px",
                     fontSize: "16px",
                     fontWeight: "600",
                     textTransform: "uppercase",
