@@ -762,9 +762,8 @@ const Home = () => {
           <Grid
             style={{
               backgroundImage: `url('${frontfilter1}')`,
+
               backgroundSize: "cover",
-              backgroundPosition: "center center",
-              backgroundAttachment: "fixed",
             }}
             item
             xs={12}

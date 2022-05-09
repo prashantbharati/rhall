@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 
   "@keyframes myEffect": {
     "0%": {
-      opacity: 0,
+      opacity: 1,
       transform: "translateX(-200%)",
     },
     "100%": {
