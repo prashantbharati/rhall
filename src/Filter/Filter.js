@@ -50,7 +50,7 @@ const Filter = () => {
     <>
       <div
         style={{
-          height: "90vh",
+          height: "80vh",
           width: "100%",
           backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.33) 0%, #A1A1A1 100%),url('${filterpage}')`,
           backgroundSize: "100% 100%",
@@ -81,11 +81,11 @@ const Filter = () => {
               backgroundSize: "cover",
             }}
             item
-            sm={12}
+            xs={12}
             md={6}
           ></Grid>
 
-          <Grid item sm={12} md={6}>
+          <Grid item xs={12} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -146,7 +146,7 @@ const Filter = () => {
                   variant="outlined"
                   align="right"
                   style={{
-                    width: "330px",
+                    width: "320px",
                     fontSize: "16px",
                     fontWeight: "600",
                     textTransform: "uppercase",
@@ -185,7 +185,8 @@ const Filter = () => {
 
       <div style={{ height: "40vh" }}>
         <Grid container>
-          <Grid item md={6}>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "700%",
@@ -205,12 +206,13 @@ const Filter = () => {
               </Typography>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
         </Grid>
       </div>
 
       <div style={{ marginRight: "40px" }}>
         <Grid container>
-          {/* <Grid item sm={0} md={1}></Grid> */}
+          {/* <Grid item xs={0} md={1}></Grid> */}
 
           <Grid
             style={{
@@ -218,11 +220,11 @@ const Filter = () => {
               backgroundSize: "cover",
             }}
             item
-            sm={12}
+            xs={12}
             md={6}
           ></Grid>
 
-          <Grid item sm={12} md={6}>
+          <Grid item xs={12} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -265,8 +267,8 @@ const Filter = () => {
 
       <div style={{ marginLeft: "40px" }}>
         <Grid container>
-          {/* <Grid item sm={0} md={1}></Grid> */}
-          <Grid item sm={12} md={6}>
+          {/* <Grid item xs={0} md={1}></Grid> */}
+          <Grid item xs={12} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -353,7 +355,7 @@ const Filter = () => {
               backgroundSize: "cover",
             }}
             item
-            sm={12}
+            xs={12}
             md={6}
           ></Grid>
         </Grid>
@@ -362,7 +364,8 @@ const Filter = () => {
       <div style={{ height: "40vh" }}>
         <Grid container>
           <Grid item md={6}></Grid>
-          <Grid item md={6}>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "700%",
@@ -382,6 +385,7 @@ const Filter = () => {
               </Typography>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
         </Grid>
       </div>
     </>
