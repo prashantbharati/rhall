@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import blogpage from "../images/blogpage.jpg";
 import card1 from "../images/card1.jpg";
 import card2 from "../images/card2.jpg";
@@ -7,6 +7,15 @@ import card4 from "../images/card4.jpg";
 import Card from "./card";
 import { Grid, Typography } from "@material-ui/core";
 const Blog = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 450px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 450px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
   return (
     <>
       <div
@@ -18,19 +27,19 @@ const Blog = () => {
         }}
       >
         {" "}
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-        <br />
-        <Typography
-          style={{
-            color: "#FFFFFF",
-            fontFamily: "Poppins",
-            fontSize: "90px",
-            fontWeight: "500",
-          }}
-          // variant="h1"
-        >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Rainmax Blog
-        </Typography>
+        <div style={{ padding: "220px 0 250px  8%" }}>
+          <Typography
+            style={{
+              color: "#FFFFFF",
+              fontFamily: "Poppins",
+              fontSize: `${matches ? "70px" : "90px"}`,
+              fontWeight: "500",
+            }}
+            // variant="h1"
+          >
+            The Rainmax Blog
+          </Typography>
+        </div>
       </div>
 
       <br />
