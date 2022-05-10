@@ -13,16 +13,6 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
-  const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 600px)").matches
-  );
-
-  useEffect(() => {
-    window
-      .matchMedia("(max-width: 600px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
-  }, []);
-
   const [matches2, setMatches2] = useState(
     window.matchMedia("(max-width: 960px)").matches
   );

@@ -311,13 +311,14 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                   transform: `${
-                    document.documentElement.scrollTop >= 500
+                    document.documentElement.scrollTop >=
+                    (matches2 ? 1220 : 500)
                       ? "translateX(0%)"
                       : "translateX(-200%)"
                   }`,
                 }}
                 className={
-                  document.documentElement.scrollTop >= 500
+                  document.documentElement.scrollTop >= (matches2 ? 1220 : 500)
                     ? classes.animatedItem
                     : ""
                 }
@@ -382,13 +383,14 @@ const Home = () => {
                   alignItems: "center",
                   textAlign: "center",
                   transform: `${
-                    document.documentElement.scrollTop >= 500
+                    document.documentElement.scrollTop >=
+                    (matches2 ? 1220 : 500)
                       ? "translateY(0%)"
                       : "translateY(200%)"
                   }`,
                 }}
                 className={
-                  document.documentElement.scrollTop >= 500
+                  document.documentElement.scrollTop >= (matches2 ? 1220 : 500)
                     ? classes.animatedItemExiting
                     : ""
                 }
@@ -458,13 +460,14 @@ const Home = () => {
                   textAlign: "center",
                   // animation: `${leftfirst} 1s ease-in`,
                   transform: `${
-                    document.documentElement.scrollTop >= 500
+                    document.documentElement.scrollTop >=
+                    (matches2 ? 1220 : 500)
                       ? "translateX(0%)"
                       : ""
                   }`,
                 }}
                 className={
-                  document.documentElement.scrollTop >= 500
+                  document.documentElement.scrollTop >= (matches2 ? 1220 : 500)
                     ? classes.animatedItemExitingRight
                     : ""
                 }
@@ -593,7 +596,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1500
+                document.documentElement.scrollTop >= (matches2 ? 2700 : 1500)
                   ? classes.animatedItem3
                   : ""
               }
@@ -623,7 +626,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1500
+                document.documentElement.scrollTop >= (matches2 ? 2700 : 1500)
                   ? classes.animatedItem3
                   : ""
               }
@@ -653,7 +656,7 @@ const Home = () => {
                 alignItems: "center",
               }}
               className={
-                document.documentElement.scrollTop >= 1500
+                document.documentElement.scrollTop >= (matches2 ? 2700 : 1500)
                   ? classes.animatedItemExiting
                   : ""
               }
@@ -758,13 +761,15 @@ const Home = () => {
                     padding: "15px 35px 15px 35px",
 
                     transform: `${
-                      document.documentElement.scrollTop >= 2500
+                      document.documentElement.scrollTop >=
+                      (matches2 ? 4000 : 2500)
                         ? "translateX(0%)"
                         : "translateX(-200%)"
                     }`,
                   }}
                   className={
-                    document.documentElement.scrollTop >= 2500
+                    document.documentElement.scrollTop >=
+                    (matches2 ? 4000 : 2500)
                       ? classes.animatedItem
                       : ""
                   }
@@ -775,22 +780,25 @@ const Home = () => {
             </div>
           </Grid>
           {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          {matches2 ? (
+            ""
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter1}')`,
 
-          <Grid
-            style={{
-              backgroundImage: `url('${frontfilter1}')`,
-
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-            }}
-            item
-            xs={12}
-            md={6}
-          ></Grid>
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
         </Grid>
       </div>
 
-      <div style={{ marginRight: "40px" }}>
+      <div style={{ marginRight: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
           {/* <Grid item xs={0} md={1}></Grid> */}
           {matches2 ? (
@@ -872,13 +880,15 @@ const Home = () => {
                     padding: "15px 35px 15px 35px",
 
                     transform: `${
-                      document.documentElement.scrollTop >= 3300
+                      document.documentElement.scrollTop >=
+                      (matches2 ? 4800 : 3300)
                         ? "translateX(0%)"
                         : "translateX(400%)"
                     }`,
                   }}
                   className={
-                    document.documentElement.scrollTop >= 3300
+                    document.documentElement.scrollTop >=
+                    (matches2 ? 4800 : 3300)
                       ? classes.animatedItemExitingRight
                       : ""
                   }
@@ -888,6 +898,7 @@ const Home = () => {
               </div>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
           {matches2 ? (
             <Grid
               style={{
@@ -932,7 +943,7 @@ const Home = () => {
               fontWeight: "200",
             }}
           >
-            Testimonitals
+            Testimonials
           </Typography>
           <div
             style={{

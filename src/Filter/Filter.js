@@ -73,12 +73,14 @@ const Filter = () => {
         </div>
       </div>
 
-      <div style={{ marginRight: "40px" }}>
+      <div style={{ marginRight: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
           <Grid
             style={{
               backgroundImage: `url('${frontfilter1}')`,
-              backgroundSize: "cover",
+              height: `${matches2 ? "70vh" : "0"}`,
+              backgroundSize: "100% 100%",
+              backgroundRepeat: "no-repeat",
             }}
             item
             xs={12}
@@ -183,7 +185,7 @@ const Filter = () => {
         </Grid>
       </div>
 
-      <div style={{ height: "40vh" }}>
+      <div style={{ height: `${matches2 ? "60vh" : "40vh"}` }}>
         <Grid container>
           {matches2 ? <Grid item xs={1}></Grid> : ""}
           <Grid item xs={10} md={6}>
@@ -210,19 +212,33 @@ const Filter = () => {
         </Grid>
       </div>
 
-      <div style={{ marginRight: "40px" }}>
+      <div style={{ marginRight: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
           {/* <Grid item xs={0} md={1}></Grid> */}
 
-          <Grid
-            style={{
-              backgroundImage: `url('${filterpic1}')`,
-              backgroundSize: "cover",
-            }}
-            item
-            xs={12}
-            md={6}
-          ></Grid>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${filterpic1}')`,
+                height: `${matches2 ? "50vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${filterpic1}')`,
+                backgroundSize: "cover",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
 
           <Grid item xs={12} md={6}>
             <div
