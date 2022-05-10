@@ -8,12 +8,12 @@ import Card from "./card";
 import { Grid, Typography } from "@material-ui/core";
 const Blog = () => {
   const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 450px)").matches
+    window.matchMedia("(max-width: 630px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(max-width: 450px)")
+      .matchMedia("(max-width: 630px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
   return (
