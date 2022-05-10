@@ -4,12 +4,12 @@ import { Typography, Button, Grid } from "@material-ui/core";
 import frontfilter2 from "../images/frontfilter2.jpg";
 const Iwell = () => {
   const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 450px)").matches
+    window.matchMedia("(max-width: 600px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(max-width: 450px)")
+      .matchMedia("(max-width: 600px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
@@ -27,7 +27,7 @@ const Iwell = () => {
     <>
       <div
         style={{
-          height: "80vh",
+          height: `${matches ? "90vh" : "80vh"}`,
           backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.15) 0%, #A1A1A1 100%),url('${iwell}')`,
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
@@ -48,10 +48,16 @@ const Iwell = () => {
         </div>
       </div>
 
-      <div style={{ boxSizing: "border-box", marginLeft: "40px" }}>
+      <div
+        style={{
+          boxSizing: "border-box",
+          marginLeft: `${matches2 ? "" : "40px"}`,
+        }}
+      >
         <Grid container>
           {/* <Grid item sm={0} md={1}></Grid> */}
-          <Grid item xs={12} md={6}>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -100,7 +106,7 @@ const Iwell = () => {
                   variant="outlined"
                   align="right"
                   style={{
-                    width: "50%",
+                    width: "320px",
                     fontSize: "16px",
                     fontWeight: "600",
                     textTransform: "uppercase",
@@ -123,16 +129,33 @@ const Iwell = () => {
               </div>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
 
-          <Grid
-            style={{
-              backgroundImage: `url('${frontfilter2}')`,
-              backgroundSize: "cover",
-            }}
-            item
-            sm={12}
-            md={6}
-          ></Grid>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter2}')`,
+
+                height: `${matches2 ? "70vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter2}')`,
+
+                backgroundSize: "cover",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
         </Grid>
       </div>
 
