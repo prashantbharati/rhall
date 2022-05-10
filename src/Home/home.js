@@ -532,7 +532,7 @@ const Home = () => {
 
       <div
         style={{
-          height: "110vh",
+          height: `${matches2 ? "170vh" : "110vh"}`,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -674,8 +674,24 @@ const Home = () => {
         </Grid>
       </div>
 
-      <div>
+      <div style={{ marginLeft: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter1}')`,
+                height: `${matches2 ? "50vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            ""
+          )}
+
           {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
           <Grid item xs={10} md={6}>
             <div
@@ -763,7 +779,7 @@ const Home = () => {
           <Grid
             style={{
               backgroundImage: `url('${frontfilter1}')`,
-              height: `${matches2 ? "70vh" : "0"}`,
+
               backgroundSize: "100% 100%",
               backgroundRepeat: "no-repeat",
             }}
