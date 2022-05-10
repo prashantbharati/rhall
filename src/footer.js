@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,19 +12,38 @@ import {
   faMapMarker,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-const footer = () => {
+const Footer = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 600px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 600px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
+  const [matches2, setMatches2] = useState(
+    window.matchMedia("(max-width: 960px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 960px)")
+      .addEventListener("change", (e) => setMatches2(e.matches));
+  }, []);
   return (
     <>
       <div
         style={{
           marginTop: "30px",
-          height: "40vh",
+          height: `${matches2 ? "80vh" : "40vh"}`,
           backgroundColor: "#1E1E1E",
         }}
       >
         <Grid container>
-          <Grid item md={1}></Grid>
-          <Grid item md={5}>
+          <Grid item xs={1} md={1}></Grid>
+          <Grid item xs={10} md={5}>
             <Typography
               style={{
                 color: "#888",
@@ -63,8 +82,10 @@ const footer = () => {
               Available pan-India.
             </Typography>
           </Grid>
+          {matches2 ? <Grid item xs={1} md={1}></Grid> : ""}
+          {matches2 ? <Grid item xs={1} md={1}></Grid> : ""}
 
-          <Grid style={{ marginLeft: "20px" }} item md={5}>
+          <Grid style={{ marginLeft: "20px" }} item xs={10} md={5}>
             <br />
             <br />
             <FontAwesomeIcon
@@ -223,4 +244,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

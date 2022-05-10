@@ -758,13 +758,13 @@ const Home = () => {
                     padding: "15px 35px 15px 35px",
 
                     transform: `${
-                      document.documentElement.scrollTop >= 1900
+                      document.documentElement.scrollTop >= 2500
                         ? "translateX(0%)"
                         : "translateX(-200%)"
                     }`,
                   }}
                   className={
-                    document.documentElement.scrollTop >= 1900
+                    document.documentElement.scrollTop >= 2500
                       ? classes.animatedItem
                       : ""
                   }
@@ -872,14 +872,14 @@ const Home = () => {
                     padding: "15px 35px 15px 35px",
 
                     transform: `${
-                      document.documentElement.scrollTop >= 1900
+                      document.documentElement.scrollTop >= 3300
                         ? "translateX(0%)"
-                        : "translateX(-200%)"
+                        : "translateX(400%)"
                     }`,
                   }}
                   className={
-                    document.documentElement.scrollTop >= 1900
-                      ? classes.animatedItem
+                    document.documentElement.scrollTop >= 3300
+                      ? classes.animatedItemExitingRight
                       : ""
                   }
                 >
