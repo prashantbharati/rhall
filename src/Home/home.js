@@ -674,10 +674,10 @@ const Home = () => {
         </Grid>
       </div>
 
-      <div style={{ marginLeft: "40px" }}>
+      <div>
         <Grid container>
-          {/* <Grid item xs={0} md={1}></Grid> */}
-          <Grid item xs={12} md={6}>
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -758,12 +758,14 @@ const Home = () => {
               </div>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
 
           <Grid
             style={{
               backgroundImage: `url('${frontfilter1}')`,
-
-              backgroundSize: "cover",
+              height: `${matches2 ? "70vh" : "0"}`,
+              backgroundSize: "100% 100%",
+              backgroundRepeat: "no-repeat",
             }}
             item
             xs={12}
@@ -775,18 +777,21 @@ const Home = () => {
       <div style={{ marginRight: "40px" }}>
         <Grid container>
           {/* <Grid item xs={0} md={1}></Grid> */}
-
-          <Grid
-            style={{
-              backgroundImage: `url('${frontfilter2}')`,
-              backgroundSize: "cover",
-            }}
-            item
-            xs={12}
-            md={6}
-          ></Grid>
-
-          <Grid item xs={12} md={6}>
+          {matches2 ? (
+            ""
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter2}')`,
+                backgroundSize: "cover",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
+          {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
+          <Grid item xs={11} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -867,6 +872,22 @@ const Home = () => {
               </div>
             </div>
           </Grid>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter2}')`,
+
+                height: `${matches2 ? "70vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            ""
+          )}
         </Grid>
       </div>
 
