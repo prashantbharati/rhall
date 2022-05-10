@@ -75,19 +75,32 @@ const Filter = () => {
 
       <div style={{ marginRight: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
-          <Grid
-            style={{
-              backgroundImage: `url('${frontfilter1}')`,
-              height: `${matches2 ? "70vh" : "0"}`,
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-            }}
-            item
-            xs={12}
-            md={6}
-          ></Grid>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter1}')`,
+                height: `${matches2 ? "70vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${frontfilter1}')`,
+                backgroundSize: "cover",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
 
-          <Grid item xs={12} md={6}>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -182,6 +195,7 @@ const Filter = () => {
               </div>
             </div>
           </Grid>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
         </Grid>
       </div>
 
@@ -243,7 +257,7 @@ const Filter = () => {
           <Grid item xs={12} md={6}>
             <div
               style={{
-                height: "130vh",
+                height: `${matches2 ? "100vh" : "130vh"}`,
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -281,10 +295,11 @@ const Filter = () => {
         </Grid>
       </div>
 
-      <div style={{ marginLeft: "40px" }}>
+      <div style={{ marginLeft: `${matches2 ? "" : "40px"}` }}>
         <Grid container>
           {/* <Grid item xs={0} md={1}></Grid> */}
-          <Grid item xs={12} md={6}>
+          {matches2 ? <Grid item xs={1}></Grid> : ""}
+          <Grid item xs={11} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -365,19 +380,33 @@ const Filter = () => {
             </div>
           </Grid>
 
-          <Grid
-            style={{
-              backgroundImage: `url('${filterpic2}')`,
-              backgroundSize: "cover",
-            }}
-            item
-            xs={12}
-            md={6}
-          ></Grid>
+          {matches2 ? (
+            <Grid
+              style={{
+                backgroundImage: `url('${filterpic2}')`,
+                height: `${matches2 ? "70vh" : "0"}`,
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          ) : (
+            <Grid
+              style={{
+                backgroundImage: `url('${filterpic2}')`,
+                backgroundSize: "cover",
+              }}
+              item
+              xs={12}
+              md={6}
+            ></Grid>
+          )}
         </Grid>
       </div>
 
-      <div style={{ height: "40vh" }}>
+      <div style={{ height: "80vh" }}>
         <Grid container>
           <Grid item md={6}></Grid>
           {matches2 ? <Grid item xs={1}></Grid> : ""}
