@@ -711,11 +711,13 @@ const Home = () => {
                 style={{
                   fontSize: "40px",
                   fontWeight: "200",
-                  lineHeight: "2.5",
+                  lineHeight: "1em",
                 }}
               >
                 Rainmax Filter
               </Typography>
+              <br />
+              <br />
               <Typography
                 style={{
                   fontSize: "18px",
@@ -815,7 +817,7 @@ const Home = () => {
             ></Grid>
           )}
           {matches2 ? <Grid item xs={1} sm={0}></Grid> : ""}
-          <Grid item xs={11} md={6}>
+          <Grid item xs={10} md={6}>
             <div
               style={{
                 height: "130vh",
@@ -830,12 +832,13 @@ const Home = () => {
                 style={{
                   fontSize: "40px",
                   fontWeight: "200",
-                  lineHeight: "2.5",
+                  lineHeight: "1em",
                 }}
               >
                 Injection well
               </Typography>
-
+              <br />
+              <br />
               <Typography
                 style={{
                   fontSize: "18px",

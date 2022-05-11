@@ -59,7 +59,7 @@ const About = () => {
           <Grid item xs={10} md={6}>
             <div
               style={{
-                height: "130vh",
+                height: `${matches2 ? "150vh" : "130vh"}`,
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -151,7 +151,8 @@ const About = () => {
             <Grid
               style={{
                 backgroundImage: `url('${aboutfront2}')`,
-                backgroundSize: "cover",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
               }}
               item
               xs={12}
@@ -183,7 +184,7 @@ const About = () => {
           <Grid item xs={12} md={6}>
             <div
               style={{
-                height: "130vh",
+                height: "80vh",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -220,7 +221,13 @@ const About = () => {
       </div>
 
       <Grid container spacing={10}>
-        <Grid item md={6} style={{ marginLeft: "30px" }}>
+        {matches2 ? <Grid item xs={1}></Grid> : ""}
+        <Grid
+          item
+          xs={10}
+          md={6}
+          style={{ marginLeft: `${matches2 ? "" : "30px"}` }}
+        >
           <Acard
             img={sai}
             name="Sai Prasad Renugunta"
@@ -231,7 +238,14 @@ A firm believer in the vital need for eco-friendly technologies, Sai spends much
 Sai affirms that long drives and working out are his keys to stress management. He is a vocal proponent of the superiority of Hyderabadi biryani and Irani chai."
           />
         </Grid>
-        <Grid item md={5} style={{ marginLeft: "30px" }}>
+        {matches2 ? <Grid item xs={1}></Grid> : ""}
+        {matches2 ? <Grid item xs={1}></Grid> : ""}
+        <Grid
+          item
+          xs={10}
+          md={5}
+          style={{ marginLeft: `${matches2 ? "" : "30px"}` }}
+        >
           <Acard
             img={nishant}
             name="Nishant Philip"
@@ -239,6 +253,7 @@ Sai affirms that long drives and working out are his keys to stress management. 
             job="Marketeer | Startup Advisor"
           />
         </Grid>
+        {matches2 ? <Grid item xs={1}></Grid> : ""}
       </Grid>
     </>
   );
