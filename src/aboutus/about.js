@@ -220,7 +220,7 @@ const About = () => {
         </Grid>
       </div>
 
-      <Grid container spacing={10}>
+      <Grid container>
         {matches2 ? <Grid item xs={1}></Grid> : ""}
         <Grid
           item
