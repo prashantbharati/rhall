@@ -413,7 +413,7 @@ const Filter = () => {
           <Grid item xs={10} md={6}>
             <div
               style={{
-                height: "700%",
+                height: "750%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

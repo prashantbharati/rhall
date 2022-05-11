@@ -4,8 +4,18 @@ import rainmaxlogo1 from "../images/rainmaxlogo1.png";
 import useStyles from "./styles.js";
 import close from "../images/close.png";
 import { makeStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 
 const useStyles2 = makeStyles((theme) => ({
+  link: {
+    fontSize: "17px",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    display: "block",
+    color: "black",
+    textDecoration: "none",
+    padding: "0 15px",
+  },
   animatedItem: {
     animation: `$myEffect 1000ms ${theme.transitions.easing.easeInOut}`,
   },
@@ -67,12 +77,12 @@ const Nav2 = () => {
   const classes = useStyles();
   const classes2 = useStyles2();
   const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 500px)").matches
+    window.matchMedia("(max-width: 600px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(max-width: 500px)")
+      .matchMedia("(max-width: 600px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
@@ -144,6 +154,36 @@ const Nav2 = () => {
             alt="logo"
           />
         </div>
+        <br />
+
+        <a className={classes2.link} href="/">
+          <Typography>HOME</Typography>
+        </a>
+        <br />
+
+        <a className={classes2.link} href="/filter">
+          <Typography>FILTER</Typography>
+        </a>
+        <br />
+
+        <a className={classes2.link} href="/iwell">
+          <Typography> INJECTION WELL</Typography>
+        </a>
+        <br />
+
+        <a className={classes2.link} href="/blog">
+          <Typography>BLOG</Typography>
+        </a>
+        <br />
+
+        <a className={classes2.link} href="/about">
+          <Typography>ABOUT US</Typography>
+        </a>
+        <br />
+
+        <a className={classes2.link} href="/">
+          <Typography> URBAN ECOLOGY</Typography>
+        </a>
       </div>
 
       <header
@@ -168,15 +208,15 @@ const Nav2 = () => {
             style={{
               opacity: "1",
               padding: "5px",
-              height: `${matches ? "100px" : "150px"}`,
+              height: `${matches ? "70px" : "150px"}`,
               width: "1024",
             }}
             src={rainmaxlogo1}
             alt="logo"
           />
-
+          <br /> <br />
           <img
-            style={{ height: "5vh", color: "white" }}
+            style={{ height: "5vh", marginTop: "10px", color: "white" }}
             src={navicon}
             onClick={doit}
             alt=""
