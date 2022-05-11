@@ -29,6 +29,10 @@ const Nav2 = () => {
     document.getElementById("nav2").style.display = "flex";
   };
 
+  const doit2 = () => {
+    document.getElementById("nav2").style.display = "none";
+  };
+
   return (
     <>
       <div
@@ -69,6 +73,7 @@ const Nav2 = () => {
               height: `${matches ? "40px" : "50px"}`,
               width: "1024",
             }}
+            onClick={doit2}
             src={close}
             alt="logo"
           />
