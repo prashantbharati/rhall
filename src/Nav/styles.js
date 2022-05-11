@@ -11,7 +11,7 @@ export default makeStyles((theme) => ({
     alignItems: "center",
     transition: "0.6s",
     padding: "40px 100px",
-    zIndex: "10000",
+    zIndex: "100",
   },
 
   headersticky: {
