@@ -7,19 +7,17 @@ const Nav = () => {
   const classes = useStyles();
   return (
     <>
-      <header style={{ height: "12vh" }} className={classes.header}>
-        <a href="#" id="logotop" className={classes.headerlogo}>
-          <img
-            style={{
-              opacity: "1",
-              padding: "5px",
-              height: "60px",
-              width: "1024",
-            }}
-            src={rainmaxlogo1}
-            alt="logo"
-          />
-        </a>
+      <header style={{ height: "15vh" }} className={classes.header}>
+        <img
+          style={{
+            opacity: "1",
+            padding: "5px",
+            height: "70px",
+            width: "1024",
+          }}
+          src={rainmaxlogo1}
+          alt="logo"
+        />
 
         <ul className={classes.headerul}>
           <li className={classes.headerulli}>

@@ -16,17 +16,22 @@ export default makeStyles((theme) => ({
 
   headersticky: {
     padding: "5px 100px",
+    height: "16vh",
     background: "rgba(0, 0, 0, 0.45);",
     backdropFilter: "saturate(180%) blur(20px)",
   },
 
   button: {
     // display: "table-cell",
+    padding: "8px 30px",
+    marginLeft: "30px",
     backgroundColor: "#68CBC1",
     color: "white",
     textTransform: "uppercase",
+    fontSize: "16px",
+    fontWeight: "500",
     letterSpacing: "0.2px",
-    maxWidth: "30em",
+
     borderStyle: "none",
     borderRadius: "999px 999px 999px 999px",
     boxShadow: "0px 5px 15px 0px rgb(39 48 112 / 51%)",
@@ -59,7 +64,7 @@ export default makeStyles((theme) => ({
     position: "relative",
     fontFamily: "Montserrat",
     display: "flex",
-    justifyContent: "center",
+
     alignItems: "center",
   },
 
@@ -71,11 +76,12 @@ export default makeStyles((theme) => ({
 
   headerullia: {
     position: "relative",
-    margin: "0 20px",
+    margin: "0 10px",
     textDecoration: "none",
     color: "#fff",
     letterSpacing: "1px",
     fontWeight: "500px",
+    fontSize: "17px",
     transition: "0.6s",
   },
 
