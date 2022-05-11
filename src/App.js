@@ -20,12 +20,12 @@ const App = () => {
   }, []);
 
   const [matches2, setMatches2] = useState(
-    window.matchMedia("(max-width: 960px)").matches
+    window.matchMedia("(max-width: 1300px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(max-width: 960px)")
+      .matchMedia("(max-width: 1300px)")
       .addEventListener("change", (e) => setMatches2(e.matches));
   }, []);
   return (

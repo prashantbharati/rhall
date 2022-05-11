@@ -21,6 +21,13 @@ export default makeStyles((theme) => ({
     backdropFilter: "saturate(180%) blur(20px)",
   },
 
+  headersticky2: {
+    padding: "5px 100px",
+    height: "25vh",
+    background: "rgba(0, 0, 0, 0.45);",
+    backdropFilter: "saturate(180%) blur(20px)",
+  },
+
   button: {
     // display: "table-cell",
     padding: "8px 30px",
