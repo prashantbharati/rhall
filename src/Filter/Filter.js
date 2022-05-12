@@ -46,6 +46,14 @@ const Filter = () => {
 
   const classes = useStyles();
 
+  const doit = (e) => {
+    e.target.style.backgroundColor = "black";
+  };
+
+  const doit2 = (e) => {
+    e.target.style.backgroundColor = "white";
+  };
+
   return (
     <>
       <div
@@ -189,6 +197,8 @@ const Filter = () => {
                       ? classes.animatedItem
                       : ""
                   }
+                  onMouseOver={doit}
+                  onMouseOut={doit2}
                 >
                   Download Broucher
                 </Button>

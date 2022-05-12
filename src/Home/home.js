@@ -116,6 +116,14 @@ const Home = () => {
       .addEventListener("change", (e) => setMatches2(e.matches));
   }, []);
 
+  const doit1 = (e) => {
+    e.target.style.background = "#141414";
+  };
+
+  const doit2 = (e) => {
+    e.target.style.backgroundColor = "white";
+  };
+
   return (
     <>
       <div
@@ -188,7 +196,9 @@ const Home = () => {
                 <Button
                   variant="contained"
                   align="right"
-                  style={{ width: "170px" }}
+                  style={{ width: "170px", backgroundColor: "white" }}
+                  onMouseOver={doit1}
+                  onMouseOut={doit2}
                 >
                   See More
                 </Button>
