@@ -764,14 +764,14 @@ const Home = () => {
 
                     transform: `${
                       document.documentElement.scrollTop >=
-                      (matches2 ? 4000 : 2500)
+                      (matches2 ? 4000 : 2300)
                         ? "translateX(0%)"
                         : "translateX(-200%)"
                     }`,
                   }}
                   className={
                     document.documentElement.scrollTop >=
-                    (matches2 ? 4000 : 2500)
+                    (matches2 ? 4000 : 2300)
                       ? classes.animatedItem
                       : ""
                   }
@@ -1188,13 +1188,13 @@ const Home = () => {
               style={{
                 height: "50px",
                 transform: `${
-                  document.documentElement.scrollTop >= 4100
+                  document.documentElement.scrollTop >= 4600
                     ? "translateY(0%)"
                     : "translateY(200%)"
                 }`,
               }}
               className={
-                document.documentElement.scrollTop >= 4100
+                document.documentElement.scrollTop >= 4600
                   ? classes.animatedItem3
                   : ""
               }

@@ -1,10 +1,24 @@
-import React from "react";
-import { Typography } from "@material-ui/core";
+import React, { useState, useEffect } from "react";
+
 import Button from "@material-ui/core/Button";
 import useStyles from "./styles.js";
 import rainmaxlogo1 from "../images/rainmaxlogo1.png";
 const Nav = () => {
   const classes = useStyles();
+  const [count, setcount] = useState(1);
+
+  const doit = (e) => {
+    e.target.style.color = "#68CBC1";
+  };
+
+  const doit2 = (e) => {
+    e.target.style.color = "#fff";
+  };
+
+  const doit3 = (e) => {
+    e.target.style.color = "#68CBC1";
+  };
+
   return (
     <>
       <header style={{ height: "15vh" }} className={classes.header}>
@@ -21,32 +35,69 @@ const Nav = () => {
 
         <ul className={classes.headerul}>
           <li className={classes.headerulli}>
-            <a id="home" className={classes.headerullia} href="/">
+            <a
+              id="home"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              className={classes.headerullia}
+              href="/"
+            >
               HOME
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="filter" className={classes.headerullia} href="/filter">
+            <a
+              id="filter"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              className={classes.headerullia}
+              href="/filter"
+            >
               FILTER
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="iwell" className={classes.headerullia} href="/iwell">
+            <a
+              id="iwell"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              onClick={doit3}
+              className={classes.headerullia}
+              href="/iwell"
+            >
               INJECTION WELL
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="blog" className={classes.headerullia} href="/blog">
+            <a
+              id="blog"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              className={classes.headerullia}
+              href="/blog"
+            >
               BLOG
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="aboutus" className={classes.headerullia} href="/about">
+            <a
+              id="aboutus"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              className={classes.headerullia}
+              href="/about"
+            >
               ABOUT US
             </a>
           </li>
           <li className={classes.headerulli}>
-            <a id="urbanecology" className={classes.headerullia} href="#">
+            <a
+              id="urbanecology"
+              onMouseOver={doit}
+              onMouseOut={doit2}
+              className={classes.headerullia}
+              href="/urbanecology"
+            >
               URBAN ECOLOGY
             </a>
           </li>

@@ -16,6 +16,7 @@ export default makeStyles((theme) => ({
 
   headersticky: {
     padding: "5px 100px",
+    transform: "trans",
     height: "16vh",
     background: "rgba(0, 0, 0, 0.45);",
     backdropFilter: "saturate(180%) blur(20px)",
@@ -102,5 +103,6 @@ export default makeStyles((theme) => ({
 
   headerstickyullia: {
     color: "#000",
+    fontSize: "125px",
   },
 }));
