@@ -117,7 +117,7 @@ const Home = () => {
   }, []);
 
   const doit1 = (e) => {
-    e.target.style.background = "#141414";
+    e.target.style.backgroundColor = "#141414";
   };
 
   const doit2 = (e) => {
@@ -196,7 +196,7 @@ const Home = () => {
                 <Button
                   variant="contained"
                   align="right"
-                  style={{ width: "170px", backgroundColor: "white" }}
+                  style={{ width: "170px", backgroundColor: "#141414" }}
                   onMouseOver={doit1}
                   onMouseOut={doit2}
                 >
