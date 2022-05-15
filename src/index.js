@@ -8,7 +8,7 @@ import Form from "./form/App";
 // import Card from "./blog/card.js";
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Form />
+    <App />
   </ThemeProvider>,
   document.getElementById("root")
 );

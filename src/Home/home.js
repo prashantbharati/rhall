@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Button, Grid } from "@material-ui/core";
-
+import Form from "../form/App";
 import frontfilter1 from "../images/frontfilter1.jpg";
 import frontfilter2 from "../images/frontfilter2.jpg";
 import frontfirst from "../images/frontfirst.jpg";
@@ -1162,6 +1162,7 @@ const Home = () => {
         </div>
       </div>
 
+      <Form />
       {/* Map div begins */}
 
       <div
