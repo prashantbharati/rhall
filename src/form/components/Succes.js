@@ -40,11 +40,12 @@ const App = (props) => {
         height: "100vh",
         width: "100%",
         backgroundImage: `url(${lastnew1})`,
-
+        position: "relative",
         backgroundSize: "100% 100%",
       }}
     >
       <div
+        id="lastdiv"
         style={{
           height: "250px",
           width: "250px",
